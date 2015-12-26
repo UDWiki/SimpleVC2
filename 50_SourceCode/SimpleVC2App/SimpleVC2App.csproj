@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C66F21E-B11C-43F4-B74C-EBD0C9255C8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telossoft.SimpleVC.WinFormApp</RootNamespace>
+    <AssemblyName>终级排课软件2</AssemblyName>
+    <ApplicationIcon>软件.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.1.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\SharedLibs\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="SGLibrary.ExcelImportExport">
+      <HintPath>..\SharedLibs\SGLibrary.ExcelImportExport.dll</HintPath>
+    </Reference>
+    <Reference Include="SGLibrary.ExcelImportExportImpl_Aspose">
+      <HintPath>..\SharedLibs\SGLibrary.ExcelImportExportImpl_Aspose.dll</HintPath>
+    </Reference>
+    <Reference Include="SGLibrary.Pub">
+      <HintPath>..\SharedLibs\SGLibrary.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VC2WinFmApp.cs" />
+    <Compile Include="ExportMatrix.cs" />
+    <Compile Include="Facade\DataFacadeImpl.cs" />
+    <Compile Include="Facade\CrsDataFacadeImpl.cs" />
+    <Compile Include="Facade\GrpMbrDataFacade.cs" />
+    <Compile Include="Facade\LsnDataFacadeImpl.cs" />
+    <Compile Include="Facade\RuleDataFacadeImpl.cs" />
+    <Compile Include="Facade\SqdDataFacadeImpl.cs" />
+    <Compile Include="Facade\TchDataFacadeImpl.cs" />
+    <Compile Include="MessageSwitch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewStyle.cs" />
+    <Compile Include="FcEntity.cs" />
+    <Compile Include="Facade\IDataFacade.cs" />
+    <Compile Include="IGrpMbrSelect.cs" />
+    <Compile Include="Assist\AboutFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\AboutFm.Designer.cs">
+      <DependentUpon>AboutFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assist\ConfigViewFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\ConfigViewFm.Designer.cs">
+      <DependentUpon>ConfigViewFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assist\WizardCourseFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\WizardCourseFm.Designer.cs">
+      <DependentUpon>WizardCourseFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assist\WizardSquadFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\WizardSquadFm.Designer.cs">
+      <DependentUpon>WizardSquadFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assist\WizardTeacherFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\WizardTeacherFm.Designer.cs">
+      <DependentUpon>WizardTeacherFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\IScheduleFm.cs" />
+    <Compile Include="VC2MainFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VC2MainFm.designer.cs">
+      <DependentUpon>VC2MainFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <None Include="Properties\AssemblyInfo.Template" />
+    <EmbeddedResource Include="VC2MainFm.resx">
+      <DependentUpon>VC2MainFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assist\AboutFm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assist\ConfigViewFm.resx">
+      <DependentUpon>ConfigViewFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assist\WizardCourseFm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardCourseFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assist\WizardSquadFm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardSquadFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assist\WizardTeacherFm.resx">
+      <DependentUpon>WizardTeacherFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\ConfirmEffectFm.resx">
+      <DependentUpon>ConfirmEffectFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\GroupMemberFm.resx">
+      <DependentUpon>GroupMemberFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\GrpSelectFmMulti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrpSelectFmMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\GrpSelectFmSingle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrpSelectFmSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\MbrSelectFmMulti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MbrSelectFmMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\SqdScheduleFm.resx">
+      <DependentUpon>SqdScheduleFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\GrpSelectFm.resx">
+      <DependentUpon>GrpSelectFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\MbrSelectFm.resx">
+      <DependentUpon>MbrSelectFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntitySelect\MbrSelectFmSingle.resx">
+      <DependentUpon>MbrSelectFmSingle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\LessonEditFm.resx">
+      <DependentUpon>LessonEditFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\RuleSetupFm.resx">
+      <DependentUpon>RuleSetupFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\SlnPropertyFm.resx">
+      <DependentUpon>SlnPropertyFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\TchScheduleFm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TchScheduleFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\TopScheduleFm.resx">
+      <DependentUpon>TopScheduleFm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCControl\RuleGrid.resx">
+      <DependentUpon>RuleGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BaseData\ConfirmEffectFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\ConfirmEffectFm.Designer.cs">
+      <DependentUpon>ConfirmEffectFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\GroupMemberFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\GroupMemberFm.designer.cs">
+      <DependentUpon>GroupMemberFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFmMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFmMulti.Designer.cs">
+      <DependentUpon>GrpSelectFmMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFmSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFmSingle.Designer.cs">
+      <DependentUpon>GrpSelectFmSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFmMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFmMulti.Designer.cs">
+      <DependentUpon>MbrSelectFmMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\MultiSelectList.cs" />
+    <Compile Include="EntitySelect\SelectIF.cs" />
+    <Compile Include="Print\FcMatrixPtr.cs" />
+    <Compile Include="Print\IPrtMatrix.cs" />
+    <Compile Include="Print\PrtMatrixSqd.cs" />
+    <Compile Include="Print\PrtMatrixTch.cs" />
+    <Compile Include="Print\PrtMatrixTest.cs" />
+    <Compile Include="Print\VcPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserInterface\SqdScheduleFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\SqdScheduleFm.Designer.cs">
+      <DependentUpon>SqdScheduleFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\GrpSelectFm.Designer.cs">
+      <DependentUpon>GrpSelectFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFm.Designer.cs">
+      <DependentUpon>MbrSelectFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFmSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntitySelect\MbrSelectFmSingle.Designer.cs">
+      <DependentUpon>MbrSelectFmSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\LessonEditFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\LessonEditFm.Designer.cs">
+      <DependentUpon>LessonEditFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\RuleSetupFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\RuleSetupFm.Designer.cs">
+      <DependentUpon>RuleSetupFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\SlnPropertyFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\SlnPropertyFm.Designer.cs">
+      <DependentUpon>SlnPropertyFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\TopScheduleFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\TopScheduleFm.Designer.cs">
+      <DependentUpon>TopScheduleFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VCControl\DrawComm.cs" />
+    <Compile Include="VCControl\SqdScheduleGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserInterface\TchScheduleFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\TchScheduleFm.Designer.cs">
+      <DependentUpon>TchScheduleFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VCControl\TchScheduleGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VCControl\FcMatrixVirtual.cs" />
+    <Compile Include="VCControl\RuleGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VCControl\RuleGrid.Designer.cs">
+      <DependentUpon>RuleGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VCControl\VcGrid.cs">
+    </Compile>
+    <Compile Include="VCControl\VcGridV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="SimpleVCHelp.chm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打开.bmp" />
+    <None Include="Resources\打印.bmp" />
+    <None Include="Resources\保存.bmp" />
+    <None Include="Resources\保存All.bmp" />
+    <None Include="Resources\取消.bmp" />
+    <None Include="Resources\优化.bmp" />
+    <None Include="Resources\排课.bmp" />
+    <None Include="Resources\查看.bmp" />
+    <None Include="Resources\编辑.bmp" />
+    <None Include="Resources\软件.ico" />
+    <None Include="Resources\课表.bmp" />
+    <None Include="Resources\groupadv32.ico" />
+    <None Include="Resources\ScheduleTs.Image.png" />
+    <None Include="Resources\StreamlineTs.Image.png" />
+    <None Include="Resources\TopScheduleTs.Image.png" />
+    <None Include="Resources\ViewTs.Image.png" />
+    <None Include="Resources\SaveTs.Image.png" />
+    <None Include="Resources\HandleTs.Image.png" />
+    <None Include="Resources\CancelTs.Image.png" />
+    <None Include="Resources\OpenTs.Image.png" />
+    <Content Include="Resources\TSLog.bmp" />
+    <Content Include="VC.mdb" />
+    <Content Include="历程.txt" />
+    <Content Include="软件.ico">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleVC2BizLogic\SimpleVC2BizLogic.csproj">
+      <Project>{EF9977F8-348A-45CE-8CD2-54910CEA93DE}</Project>
+      <Name>SimpleVC2BizLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleVC2Dac\SimpleVC2Dac.csproj">
+      <Project>{D72B9937-A600-4FBF-A6B6-621BCC8B6FA3}</Project>
+      <Name>SimpleVC2Dac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleVC2Export\SimpleVC2Export.csproj">
+      <Project>{4AEDEA6B-16D8-4263-8694-4AD6D15E4587}</Project>
+      <Name>SimpleVC2Export</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleVC2Model\SimpleVC2Model.csproj">
+      <Project>{2F152BFF-D62A-4AAF-A8E6-646775FAE146}</Project>
+      <Name>SimpleVC2Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F152BFF-D62A-4AAF-A8E6-646775FAE146}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telossoft.SimpleVC.Model</RootNamespace>
+    <AssemblyName>Telossoft.SimpleVC.Model</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SGLibrary.Pub">
+      <HintPath>..\SharedLibs\SGLibrary.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizEntity\EnFailAct.cs" />
+    <Compile Include="BizEntity\VcActEtyRelation.cs" />
+    <Compile Include="DataRule\IGrpMbrDataRule.cs" />
+    <Compile Include="DataRule\ILsnDataRule.cs" />
+    <Compile Include="DataRule\IRuleDataRule.cs" />
+    <Compile Include="DataAccess\IEntityDac.cs" />
+    <Compile Include="DataAccess\IGrpMbrDac.cs" />
+    <Compile Include="DataAccess\ILsnDac.cs" />
+    <Compile Include="DataAccess\IRuleDac.cs" />
+    <Compile Include="IDataRule.cs" />
+    <Compile Include="CommLogic.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="IDataAccess.cs" />
+    <Compile Include="IEngine.cs" />
+    <Compile Include="IMbrSelect.cs" />
+    <Compile Include="OrmEntity\BaseEntity.cs" />
+    <Compile Include="OrmEntity\EnClsLesson.cs" />
+    <Compile Include="OrmEntity\EnCourse.cs" />
+    <Compile Include="OrmEntity\EnCourseGroup.cs" />
+    <Compile Include="OrmEntity\EnLesson.cs" />
+    <Compile Include="OrmEntity\EnLsnAct.cs" />
+    <Compile Include="OrmEntity\EnSolution.cs" />
+    <Compile Include="OrmEntity\EnSquad.cs" />
+    <Compile Include="OrmEntity\EnSquadGroup.cs" />
+    <Compile Include="OrmEntity\EnTeacher.cs" />
+    <Compile Include="OrmEntity\EnTeacherGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

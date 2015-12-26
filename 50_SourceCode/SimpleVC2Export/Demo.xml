@@ -1,0 +1,1571 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <TITLE>全校课表-科建课表助理生成</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=gb2312">
+      <SCRIPT language="javascript" id="clientEventHandlersJS">
+        <!--
+function window_onscroll() {
+window.lefttb.style.left=document.body.scrollLeft+1
+window.toptb.style.posTop =document.body.scrollTop
+}
+//-->
+      </SCRIPT>
+
+      <STYLE type="text"/css>TD {
+      FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+      }
+      </STYLE>
+
+      <META content="MSHTML 6.00.6000.16705" name="GENERATOR">
+  </HEAD>
+  <BODY language="javascript" onscroll="return window_onscroll()">
+    <TABLE style="LEFT: 0px; POSITION: absolute; TOP: 0px" cellSpacing="0"
+    cellPadding="0" width="2880" border="1">
+      <TBODY>
+
+        <TR height="18">
+          <TD colSpan="6">
+            <DIV id="toptb"
+            style="LEFT: 0px; WIDTH: 2880px; POSITION: absolute; TOP: 0px; HEIGHT: 18px">
+              <TABLE cellSpacing="0" cellPadding="0" width="2880" bgColor=#"ffefff" border="1">
+                <TBODY>
+                  <TR>
+                    <TD width="80">&nbsp;</TD>
+                    <TD width="80">周一 第1节</TD>
+                    <TD width="80">周一 第2节</TD>
+                    <TD width="80">周一 第3节</TD>
+                    <TD width="80">周一 第4节</TD>
+                    <TD width="80">周一 第5节</TD>
+                    <TD width="80">周一 第6节</TD>
+                    <TD width="80">周一 第7节</TD>
+                    <TD width="80">周二 第1节</TD>
+                    <TD width="80">周二 第2节</TD>
+                    <TD width="80">周二 第3节</TD>
+                    <TD width="80">周二 第4节</TD>
+                    <TD width="80">周二 第5节</TD>
+                    <TD width="80">周二 第6节</TD>
+                    <TD width="80">周二 第7节</TD>
+                    <TD width="80">周三 第1节</TD>
+                    <TD width="80">周三 第2节</TD>
+                    <TD width="80">周三 第3节</TD>
+                    <TD width="80">周三 第4节</TD>
+                    <TD width="80">周三 第5节</TD>
+                    <TD width="80">周三 第6节</TD>
+                    <TD width="80">周三 第7节</TD>
+                    <TD width="80">周四 第1节</TD>
+                    <TD width="80">周四 第2节</TD>
+                    <TD width="80">周四 第3节</TD>
+                    <TD width="80">周四 第4节</TD>
+                    <TD width="80">周四 第5节</TD>
+                    <TD width="80">周四 第6节</TD>
+                    <TD width="80">周四 第7节</TD>
+                    <TD width="80">周五 第1节</TD>
+                    <TD width="80">周五 第2节</TD>
+                    <TD width="80">周五 第3节</TD>
+                    <TD width="80">周五 第4节</TD>
+                    <TD width="80">周五 第5节</TD>
+                    <TD width="80">周五 第6节</TD>
+                    <TD width="80">周五 第7节</TD>
+                    <TD></TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </DIV>
+          </TD>
+        </TR>
+        
+        <TR>
+          <TD width="80" rowSpan="37">
+            <DIV id="lefttb"
+            style="LEFT: 1px; WIDTH: 0px; POSITION: absolute; TOP: 18px">
+              <TABLE cellSpacing="0" cellPadding="0" width="80" bgColor=#"ffefff" border="1">
+                <TBODY>
+                  <TR>
+                    <TD width="80">二年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">二年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">二年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">二年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">二年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">二年级(6</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">六年级(6</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">三年级(6</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">四年级(6</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">五年级(6</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(1</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(2</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(3</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(4</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(5</TD>
+                  </TR>
+                  <TR>
+                    <TD width="80">一年级(6</TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+            </DIV>
+          </TD>
+        </TR>
+        
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">写字 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">外语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文/小 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">信息技术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">主题学习 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">音乐 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">综活3 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">综活2 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">外语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">综活3 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">体育 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">音乐 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">综活1 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">科学 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">品德社会 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">班队 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">体育 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">综活2 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">作文 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活1 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">思品 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">自然 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">综活3 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">外语 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">社会 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">综合实践 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">信息发布 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">体育活动 </TD>
+          <TD width="80">英语口语 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">品德生活 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">体育健康 </TD>
+          <TD width="80">班队 </TD>
+          <TD width="80">写字 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">数学 </TD>
+          <TD width="80">语文 </TD>
+          <TD width="80">健康教育 </TD>
+          <TD width="80">美术 </TD>
+          <TD width="80">音乐 </TD>
+          <TD width="80">兴趣活动 </TD>
+          <TD>
+          </TD>
+        </TR>
+        
+      </TBODY>
+    </TABLE>
+  </BODY>
+</HTML>
