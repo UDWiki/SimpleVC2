@@ -15,26 +15,44 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0A0596077B1A8E49DF274E96D964EB72"
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_29D2F04EF0228B90A6C9E5597589E4EF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_6FC50A07C11F8F0268A59E8EF10DFB83"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_8F02F1895CDC14B08F2A19C9CB562B18"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_474EA2C5E10BE06BEEEC0438E2408F27"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_EDB1B7C3A9E2838B11BF45DCFFD4813C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
         "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
-        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
-        "OwnerKey" = "8:_0A0596077B1A8E49DF274E96D964EB72"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1CAE0463AC894472BDBB004EE39EEC7E"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
+        "OwnerKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,26 +63,68 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_43743536B72C811DE771284837E6B24F"
+        "MsmKey" = "8:_29D2F04EF0228B90A6C9E5597589E4EF"
         "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_43743536B72C811DE771284837E6B24F"
-        "OwnerKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
+        "MsmKey" = "8:_29D2F04EF0228B90A6C9E5597589E4EF"
+        "OwnerKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_549EBBB53928DA79D1C5BDC06380804C"
+        "MsmKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
         "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_549EBBB53928DA79D1C5BDC06380804C"
-        "OwnerKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
+        "MsmKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
+        "OwnerKey" = "8:_6FC50A07C11F8F0268A59E8EF10DFB83"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_474EA2C5E10BE06BEEEC0438E2408F27"
+        "OwnerKey" = "8:_EDB1B7C3A9E2838B11BF45DCFFD4813C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_474EA2C5E10BE06BEEEC0438E2408F27"
+        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_474EA2C5E10BE06BEEEC0438E2408F27"
+        "OwnerKey" = "8:_8F02F1895CDC14B08F2A19C9CB562B18"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4D11B1804E298C9C5881CB77999017A4"
+        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4D11B1804E298C9C5881CB77999017A4"
+        "OwnerKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6FC50A07C11F8F0268A59E8EF10DFB83"
+        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7D99C2B5B2B6417F8F8A70D5818B86F7"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -75,50 +135,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8A84313F8E12C64E3A099AF6E2EE30D4"
+        "MsmKey" = "8:_8F02F1895CDC14B08F2A19C9CB562B18"
         "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_43743536B72C811DE771284837E6B24F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_0A0596077B1A8E49DF274E96D964EB72"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_8A84313F8E12C64E3A099AF6E2EE30D4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_CB8718BBB119A537ABEF4C8BE2A82BCA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_BE4CD735D405314A0BFDC751833EA5A7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
-        "OwnerKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -129,32 +147,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BE4CD735D405314A0BFDC751833EA5A7"
-        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CB8718BBB119A537ABEF4C8BE2A82BCA"
-        "OwnerKey" = "8:_BE4CD735D405314A0BFDC751833EA5A7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CB8718BBB119A537ABEF4C8BE2A82BCA"
-        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CB8718BBB119A537ABEF4C8BE2A82BCA"
-        "OwnerKey" = "8:_8A84313F8E12C64E3A099AF6E2EE30D4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_EC6E533679554CBD83DD8021256644E8"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EDB1B7C3A9E2838B11BF45DCFFD4813C"
+        "OwnerKey" = "8:_87B308B1277D46F99577405509A89E3B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -172,49 +172,49 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0A0596077B1A8E49DF274E96D964EB72"
+        "OwnerKey" = "8:_6FC50A07C11F8F0268A59E8EF10DFB83"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8A84313F8E12C64E3A099AF6E2EE30D4"
+        "OwnerKey" = "8:_8F02F1895CDC14B08F2A19C9CB562B18"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BE4CD735D405314A0BFDC751833EA5A7"
+        "OwnerKey" = "8:_EDB1B7C3A9E2838B11BF45DCFFD4813C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CB8718BBB119A537ABEF4C8BE2A82BCA"
+        "OwnerKey" = "8:_474EA2C5E10BE06BEEEC0438E2408F27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0EEC3FB1CF14A1D185928B343CE2E687"
+        "OwnerKey" = "8:_3FE5205EA113E6D8D25FE30E36910612"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_43743536B72C811DE771284837E6B24F"
+        "OwnerKey" = "8:_29D2F04EF0228B90A6C9E5597589E4EF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_967EAB57B8AC5330FC21F95C470D265B"
+        "OwnerKey" = "8:_14A3CF58F69AAD290770FB9C8AED79EB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_549EBBB53928DA79D1C5BDC06380804C"
+        "OwnerKey" = "8:_4D11B1804E298C9C5881CB77999017A4"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -322,20 +322,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0A0596077B1A8E49DF274E96D964EB72"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_14A3CF58F69AAD290770FB9C8AED79EB"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Export, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SGLibrary.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0A0596077B1A8E49DF274E96D964EB72"
+                    "_14A3CF58F69AAD290770FB9C8AED79EB"
                     {
-                    "Name" = "8:Telossoft.SimpleVC.Export.dll"
+                    "Name" = "8:SGLibrary.Pub.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Telossoft.SimpleVC.Export.dll"
+            "SourcePath" = "8:SGLibrary.Pub.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
@@ -351,57 +351,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0EEC3FB1CF14A1D185928B343CE2E687"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SGLibrary.ExcelImportExportImpl_Aspose, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_0EEC3FB1CF14A1D185928B343CE2E687"
-                    {
-                    "Name" = "8:SGLibrary.ExcelImportExportImpl_Aspose.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SGLibrary.ExcelImportExportImpl_Aspose.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1CAE0463AC894472BDBB004EE39EEC7E"
-            {
-            "SourcePath" = "8:D:\\TelossoftProjects\\2002_TelossoftWeb\\K12EMWeb2014\\K12EMWebApp\\VC\\VC2Help\\SimpleVCHelp.chm"
-            "TargetName" = "8:SimpleVCHelp.chm"
-            "Tag" = "8:"
-            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2017E69C778847EA9716B9C5D5208202"
@@ -424,14 +373,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_43743536B72C811DE771284837E6B24F"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_29D2F04EF0228B90A6C9E5597589E4EF"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:SGLibrary.ExcelImportExport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_43743536B72C811DE771284837E6B24F"
+                    "_29D2F04EF0228B90A6C9E5597589E4EF"
                     {
                     "Name" = "8:SGLibrary.ExcelImportExport.dll"
                     "Attributes" = "3:512"
@@ -455,14 +404,76 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_549EBBB53928DA79D1C5BDC06380804C"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3FE5205EA113E6D8D25FE30E36910612"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SGLibrary.ExcelImportExportImpl_Aspose, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3FE5205EA113E6D8D25FE30E36910612"
+                    {
+                    "Name" = "8:SGLibrary.ExcelImportExportImpl_Aspose.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SGLibrary.ExcelImportExportImpl_Aspose.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_474EA2C5E10BE06BEEEC0438E2408F27"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Model, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_474EA2C5E10BE06BEEEC0438E2408F27"
+                    {
+                    "Name" = "8:Telossoft.SimpleVC.Model.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Telossoft.SimpleVC.Model.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4D11B1804E298C9C5881CB77999017A4"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Aspose.Cells, Version=4.4.0.5, Culture=neutral, PublicKeyToken=5798b630e02d74fc, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_549EBBB53928DA79D1C5BDC06380804C"
+                    "_4D11B1804E298C9C5881CB77999017A4"
                     {
                     "Name" = "8:Aspose.Cells.dll"
                     "Attributes" = "3:512"
@@ -486,20 +497,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8A84313F8E12C64E3A099AF6E2EE30D4"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6FC50A07C11F8F0268A59E8EF10DFB83"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Dac, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Export, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8A84313F8E12C64E3A099AF6E2EE30D4"
+                    "_6FC50A07C11F8F0268A59E8EF10DFB83"
                     {
-                    "Name" = "8:Telossoft.SimpleVC.Dac.dll"
+                    "Name" = "8:Telossoft.SimpleVC.Export.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Telossoft.SimpleVC.Dac.dll"
+            "SourcePath" = "8:Telossoft.SimpleVC.Export.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
@@ -517,20 +528,40 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_967EAB57B8AC5330FC21F95C470D265B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D99C2B5B2B6417F8F8A70D5818B86F7"
+            {
+            "SourcePath" = "8:SimpleVCHelp.chm"
+            "TargetName" = "8:SimpleVCHelp.chm"
+            "Tag" = "8:"
+            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F02F1895CDC14B08F2A19C9CB562B18"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SGLibrary.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Dac, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_967EAB57B8AC5330FC21F95C470D265B"
+                    "_8F02F1895CDC14B08F2A19C9CB562B18"
                     {
-                    "Name" = "8:SGLibrary.Pub.dll"
+                    "Name" = "8:Telossoft.SimpleVC.Dac.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:SGLibrary.Pub.dll"
+            "SourcePath" = "8:Telossoft.SimpleVC.Dac.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
@@ -568,14 +599,34 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BE4CD735D405314A0BFDC751833EA5A7"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC6E533679554CBD83DD8021256644E8"
+            {
+            "SourcePath" = "8:00_终极排课2.ico"
+            "TargetName" = "8:00_终极排课2.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EDB1B7C3A9E2838B11BF45DCFFD4813C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.BizLogic, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BE4CD735D405314A0BFDC751833EA5A7"
+                    "_EDB1B7C3A9E2838B11BF45DCFFD4813C"
                     {
                     "Name" = "8:Telossoft.SimpleVC.BizLogic.dll"
                     "Attributes" = "3:512"
@@ -597,57 +648,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CB8718BBB119A537ABEF4C8BE2A82BCA"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Telossoft.SimpleVC.Model, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_CB8718BBB119A537ABEF4C8BE2A82BCA"
-                    {
-                    "Name" = "8:Telossoft.SimpleVC.Model.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Telossoft.SimpleVC.Model.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC6E533679554CBD83DD8021256644E8"
-            {
-            "SourcePath" = "8:00_终极排课2.ico"
-            "TargetName" = "8:00_终极排课2.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_435BA0DC485B4C5AA559329EB4D125C8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F8B9A46C58194FE2AD6843539743BED5"
@@ -913,7 +913,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_004259292D33447C910900378BC6FA65"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:欢迎使用"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
@@ -961,7 +961,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B84F5ADE6ED14974B55E789247E1C4F9"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:安装文件夹"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -983,7 +983,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_EA5D94C6A3764E97AC46884740AD051E"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:确认安装"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -1014,7 +1014,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_0A48D2DE4A5D488BB760532E60B1A48D"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:已完成"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -1045,7 +1045,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AEB02F5254914C1C8A3048E524836D39"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
+                    "DisplayName" = "8:已完成"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
@@ -1089,7 +1089,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CE2BEC05585447B89885B790D1AEFE84"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:进度"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -1139,7 +1139,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_20D4CB1F84C2490CABFA6F3D8D5025E2"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "DisplayName" = "8:安装文件夹"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -1174,7 +1174,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AD13CC53B35644979E451CE25A10A6F0"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
+                    "DisplayName" = "8:确认安装"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -1196,7 +1196,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B44DB73CB4194D61B8921247D53B348B"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
+                    "DisplayName" = "8:欢迎使用"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -1259,7 +1259,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4F52C64021794268833CBBB09D1DA1B5"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
+                    "DisplayName" = "8:进度"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"

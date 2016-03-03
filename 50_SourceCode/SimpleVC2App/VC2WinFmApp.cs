@@ -9,7 +9,7 @@ namespace Telossoft.SimpleVC.WinFormApp
 {
     public static class VC2WinFmApp
     {
-        public static String ProductHomePage = "http://www.telossoft.com.cn/K12EMWebApp";
+        public static String ProductHomePage = "http://www.telossoft.com.cn";
         public static String ProductId = "VC2";
         public const String Name = "ÖÕ¼«ÅÅ¿ÎÈí¼þ2";
 

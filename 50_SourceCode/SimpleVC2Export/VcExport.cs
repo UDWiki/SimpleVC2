@@ -23,7 +23,7 @@ namespace Telossoft.SimpleVC.Export
         {
             if (kind == cExportToHtml)
             {
-                String fileName = ExIO.GetSaveFileName(ExIO.FileFilter_Html, data.Name + ".htm",
+                String fileName = ExFileDialog.GetSaveFileName(ExFileDialog.FileFilter_Html, data.Name + ".htm",
                     Environment.GetFolderPath(Environment.SpecialFolder.Personal));
                 if (!String.IsNullOrEmpty(fileName))
                 {
@@ -41,7 +41,7 @@ namespace Telossoft.SimpleVC.Export
             }
             else if (kind == cExportToExcel)
             {
-                String fileName = ExIO.GetSaveFileName(ExIO.FileFilter_Excel, data.Name + ".xls", 
+                String fileName = ExFileDialog.GetSaveFileName(ExFileDialog.FileFilter_Excel, data.Name + ".xls", 
                     Environment.GetFolderPath(Environment.SpecialFolder.Personal));
                 if (!String.IsNullOrEmpty(fileName))
                 {

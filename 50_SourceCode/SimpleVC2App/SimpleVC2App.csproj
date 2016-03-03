@@ -136,7 +136,6 @@
       <DependentUpon>VC2MainFm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <None Include="app.config" />
     <None Include="Properties\AssemblyInfo.Template" />
     <EmbeddedResource Include="VC2MainFm.resx">
       <DependentUpon>VC2MainFm.cs</DependentUpon>
