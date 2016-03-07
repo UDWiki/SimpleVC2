@@ -61,8 +61,8 @@
     <Reference Include="SGLibrary.ExcelImportExport">
       <HintPath>..\SharedLibs\SGLibrary.ExcelImportExport.dll</HintPath>
     </Reference>
-    <Reference Include="SGLibrary.ExcelImportExportImpl_Aspose">
-      <HintPath>..\SharedLibs\SGLibrary.ExcelImportExportImpl_Aspose.dll</HintPath>
+    <Reference Include="SGLibrary.ExcelImportExport.ByAspose">
+      <HintPath>..\SharedLibs\SGLibrary.ExcelImportExport.ByAspose.dll</HintPath>
     </Reference>
     <Reference Include="SGLibrary.Pub">
       <HintPath>..\SharedLibs\SGLibrary.Pub.dll</HintPath>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SGLibrary.Extend;
-using SGLibrary.ExcelImportExportImpl_Aspose;
+using SGLibrary.ExcelImportExport.ByAspose;
 
 namespace Telossoft.SimpleVC.Export
 {
