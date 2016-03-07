@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SGLibrary.ExcelImportExport.ByAspose</name>
+    </assembly>
+    <members>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelAccess_Aspose.TryLoadExcelData(System.String,System.String)">
+            <summary>
+            sheetName为空则第0个sheet
+            所有元素当作String
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletPlane``1(System.String)">
+            <summary>
+            创建单一类型的数据模板
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletPlane``1">
+            <summary>
+            创建单一类型的数据模板
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportPlane``1(System.String,System.Collections.Generic.IList{``0})">
+            <summary>
+            导出单一类型的数据列表
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportPlane``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            导出单一类型的数据列表
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ImportPlane``1(System.String,System.IO.Stream)">
+            <summary>
+            导入单一类型的数据
+            ExcelSheetAttribute指定 > 第一个sheet
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportMultilayer``1(System.String,System.Collections.Generic.IList{SGLibrary.Excel.SheetData{``0}})">
+            <summary>
+            导出类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportMultilayer``1(System.String,System.IO.MemoryStream@,System.Collections.Generic.IList{SGLibrary.Excel.SheetData{``0}})">
+            <summary>
+            导出类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ImportMultilayer``1(System.String)">
+            <summary>
+            导入类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            创建多类型的数据模板(每页一个类型)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.Collections.Generic.IList{System.Type})">
+            <summary>
+            创建多类型的数据模板(每页一个类型)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.String,System.IO.MemoryStream@,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            创建多类型的数据模板(每页一个类型)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ImportHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            导入多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ImportHeterogeneity(System.IO.Stream,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            导入多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ImportHeterogeneity(System.String,System.IO.Stream,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            导入多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportHeterogeneity(System.String,System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            导出多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportHeterogeneity(System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            导出多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.ExportHeterogeneity(System.String,System.IO.MemoryStream@,System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            导出多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.FindTList``1(System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            从多类型数据列表中找到指定类型的列表
+            </summary>
+        </member>
+    </members>
+</doc>

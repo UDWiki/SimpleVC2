@@ -4,6 +4,153 @@
         <name>SGLibrary.Pub</name>
     </assembly>
     <members>
+        <member name="T:SGLibrary.Excel.AttributeProviderExcelColumn2GridBindColumn">
+            <summary>
+            使用ExcelColumnAttribute的Title、ReadOnly、Sequence定义GridBindColumnAttribute
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.AttributeProviderOrmProperty2ExcelColumn">
+            <summary>
+            使用OrmPropertyAttribute的Title、Sequence定义ExcelColumnAttribute
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.ExcelAccess_OledbAce">
+            <summary>
+            需要Mircrosoft.ace.oledb.12.0驱动以便使用Ace访问Excel
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.ExcelAccess_OledbAce.TryListExcelSheets(System.String)">
+            <summary>
+            使用Ace列出Excel文件的所有Sheet, 注意返回的有"FilterDatabase"结尾的隐含Sheet
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.ExcelAccess_OledbAce.TryLoadExcelData(System.String,System.String)">
+            <summary>
+            使用Act装载Excel的数据
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.ExcelColumnAttribute">
+            <summary>
+            导入导出Excel 列名
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.ExcelColumnBooleanAttribute">
+            <summary>
+            Boolean类型用字符串表达,注意在Title提示用户可接受的输入
+            </summary>
+        </member>
+        <member name="F:SGLibrary.Excel.ExcelVersion.HSSF">
+            <summary>
+            2003版本, .xls
+            </summary>
+        </member>
+        <member name="F:SGLibrary.Excel.ExcelVersion.XSSF">
+            <summary>
+            2007版本, .xlsx
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.ExcelSheetAttribute">
+            <summary>
+            导入导出ExcelSheet名
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Excel.IExcelImportExport">
+            <summary>
+            Excel导入导出接口
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletPlane``1(System.String)">
+            <summary>
+            创建单一类型的数据模板
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportPlane``1(System.String,System.Collections.Generic.IList{``0})">
+            <summary>
+            导出单一类型的数据列表
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportPlane``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            导出单一类型的数据列表
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportPlane``1(System.String)">
+            <summary>
+            导入单一类型的数据
+            ExcelSheetAttribute指定 > 第一个sheet
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportPlane``1(System.IO.Stream)">
+            <summary>
+            导入单一类型的数据
+            ExcelSheetAttribute指定 > 第一个sheet
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportMultilayer``1(System.String,System.Collections.Generic.IList{SGLibrary.Excel.SheetData{``0}})">
+            <summary>
+            导出类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportMultilayer``1(System.Collections.Generic.IList{SGLibrary.Excel.SheetData{``0}})">
+            <summary>
+            导出类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportMultilayer``1(System.String)">
+            <summary>
+            导入类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportMultilayer``1(System.IO.Stream)">
+            <summary>
+            导入类型一致的重复的多页数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            创建多类型的数据模板(每页一个类型)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletHeterogeneity(System.Collections.Generic.IList{System.Type})">
+            <summary>
+            创建多类型的数据模板(每页一个类型)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportHeterogeneity(System.String,System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            导出多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ExportHeterogeneity(System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            导出多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            导入多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.ImportHeterogeneity(System.IO.Stream,System.Collections.Generic.IList{System.Type})">
+            <summary>
+            导入多类型的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.IExcelImportExport.FindTList``1(System.Collections.Generic.IList{System.Collections.IList})">
+            <summary>
+            从多类型数据列表中找到指定类型的列表
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Excel.SheetData`1.SheetName">
+            <summary>
+            页标题
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Excel.SheetData`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
         <member name="M:SGLibrary.Extend.ExConvertObj.ObjectToHexStr(System.Object)">
             <summary>
             序列化任意对象到一个组合的、可校验的、不含空格等特殊字符的串(仅包含：数字、":"、Type.FullName中字符）
@@ -25,6 +172,31 @@
             System.Environment
             System.Windows.Forms.Application.StartupPath 
             System.Reflection.Assembly.GetEntryAssembly().Location 
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExString.SplitAndFormat(System.String,System.String)">
+            <summary>
+            分离后串会Trim，不含空串
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExString.Join(System.String,System.String[])">
+            <summary>
+            组合之，如将Id组合成"1,2,3", 类似String.Join
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExString.Join``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExString.Join``1(System.String,System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.String})">
+            <summary>
+            组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExString.TrySplitGuid(System.String,System.String)">
+            <summary>
+            Guid.Empty会被跳过
             </summary>
         </member>
         <member name="M:SGLibrary.Extend.ExString.TryCutNum_Starts(System.String@)">
@@ -122,26 +294,6 @@
         <member name="M:SGLibrary.Extend.ExString.Format(System.String,System.Object[])">
             <summary>
             String.Format的format存在'{'、'}'时会报错的
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ExString.SplitAndFormat(System.String,System.String)">
-            <summary>
-            分离后串会Trim，不含空串
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ExString.Combination(System.String,System.String[])">
-            <summary>
-            组合之，如将Id组合成"1,2,3", 类似String.Join
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ExString.Combination``1(System.String,System.Collections.Generic.IEnumerable{``0})">
-            <summary>
-            组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ExString.Combination``1(System.String,System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.String})">
-            <summary>
-            组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
             </summary>
         </member>
         <member name="M:SGLibrary.Extend.ExString.ToHafeCharString(System.String)">
@@ -2285,34 +2437,24 @@
             分页查询，注意pageIndex 0起点
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb">
+        <member name="T:SGLibrary.Excel.ExcelAccess_OledbJet">
             <summary>
             需要Mircrosoft.ace.oledb.12.0驱动以便使用Ace访问Excel
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb.FilterDatabaseName">
-            <summary>
-            隐含Sheet
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb.ListExcelSheets_Ace(System.String)">
-            <summary>
-            使用Ace列出Excel文件的所有Sheet, 注意返回的有"FilterDatabase"结尾的隐含Sheet
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb.ListExcelSheets_Jet(System.String)">
+        <member name="M:SGLibrary.Excel.ExcelAccess_OledbJet.TryListExcelSheets(System.String)">
             <summary>
             使用Jet列出Excel文件的所有Sheet, 注意返回的有"FilterDatabase"结尾的隐含Sheet
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb.LoadExcelData_Ace(System.String,System.String)">
-            <summary>
-            使用Act装载Excel的数据
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.DB.ExcelAccess_MicrosoftOledb.LoadExcelData_Jet(System.String,System.String)">
+        <member name="M:SGLibrary.Excel.ExcelAccess_OledbJet.TryLoadExcelData(System.String,System.String)">
             <summary>
             使用Jet装载Excel的数据
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Excel.ExcelAccess_OledbJet.LoadExcelData(System.String,System.String)">
+            <summary>
+            不能支持07版以后的格式
             </summary>
         </member>
         <member name="T:SGLibrary.Extend.DB.StrProperty2DbCheckImpl">
@@ -2687,6 +2829,12 @@
         <member name="M:SGLibrary.Extend.ExEnum.GetMin``1">
             <summary>
             获取所定义的枚举成员的最小值
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExEnum.ParseByInt(System.Type,System.Int32)">
+            <summary>
+            强制将Int32转到枚举类型, 不管标识符, 只管实际的值, 未定义的会抛出异常
+            会遍历enumType所有值, 比较低效
             </summary>
         </member>
         <member name="M:SGLibrary.Extend.ExEnum.TryGetValue``1(System.String,``0)">
