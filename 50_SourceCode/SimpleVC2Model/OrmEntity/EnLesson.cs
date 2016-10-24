@@ -1,64 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SGLibrary.Framework.ORM;
+using System;
 
 namespace Telossoft.SimpleVC.Model
 {
     /// <summary>
     ///课务集
     /// </summary>
-    public class EnLesson : BaseEntity
+    [OrmEntity(TableName = "TLesson",
+        FieldDefaultPrefix = "F")]
+    public class EnLesson
     {
-        private EnSquadGroup squadGroup;
+        [OrmPK]
+        public Int64 ID { get; set; }
 
-        public EnSquadGroup SquadGroup
+        [OrmValue(ValueKind = OrmValueKind.Memo)]
+        public String SquadIds { get; set; }
+
+        [OrmValue]
+        public Int64 SubjectId { get; set; }
+
+        [OrmValue(ValueKind = OrmValueKind.Memo)]
+        public String TeacherIds { get; set; }
+
+        [OrmValue]
+        public Int32 ActCount { get; set; }
+
+        [OrmValue(ValueKind = OrmValueKind.Memo)]
+        public String ActValues { get; set; }
+
+        public EnLesson Clone()
         {
-            get { return squadGroup; }
-            set { squadGroup = value; }
-        }
-
-        private EnCourse course;
-
-        public EnCourse Course
-        {
-            get { return course; }
-            set { course = value; }
-        }
-
-        private Boolean isSelfStudy;  //自习，不需要教师
-
-        public Boolean IsSelfStudy
-        {
-            get { return isSelfStudy; }
-            set { isSelfStudy = value; }
-        }
-
-        /// <summary>
-        /// 周上课节数
-        /// </summary>
-        private int sharedTime;
-
-        public int SharedTime
-        {
-            get { return sharedTime; }
-            set { sharedTime = value; }
-        }
-
-        public override string ToString()
-        {
-            return Course.Name + " " + SquadGroup.Name;
-        }
-
-        public override string Name
-        {
-            get
-            {
-                return ToString();
-            }
-            set
-            {
-            }
+            return this.MemberwiseClone() as EnLesson;
         }
     }
-
 }

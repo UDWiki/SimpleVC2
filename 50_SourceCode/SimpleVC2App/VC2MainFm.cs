@@ -470,7 +470,7 @@ namespace Telossoft.SimpleVC.WinFormApp
                 Doc.DocumentName = "教师课表";
             else if (type == typeof(EnSquad))
                 Doc.DocumentName = "班级课表";
-            else if (type == typeof(EnCourse))
+            else if (type == typeof(EnSubject))
                 Doc.DocumentName = "课程课表";
 
             Doc.Entitis = Eties;

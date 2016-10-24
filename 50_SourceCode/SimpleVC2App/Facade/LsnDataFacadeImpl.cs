@@ -72,7 +72,7 @@ namespace Telossoft.SimpleVC.WinFormApp.Facade
                 return;
 
             IList<BaseEntity> Sqds = new GIListTypeChange<EnSquad, BaseEntity>(DataRule.Sqd.GetMembes(this.Grp));
-            foreach (EnCourse crs in CrsesCopy)
+            foreach (EnSubject crs in CrsesCopy)
             {
                 FcLesson Lsn = new FcLesson(this);
                 Lsn.course = crs;
@@ -136,7 +136,7 @@ namespace Telossoft.SimpleVC.WinFormApp.Facade
         }
 
 
-        private Boolean InLsns(EnCourse Crs)
+        private Boolean InLsns(EnSubject Crs)
         {
             foreach (FcLesson Lsn in this.FcLsns)
                 if (Lsn.course.Id == Crs.Id)

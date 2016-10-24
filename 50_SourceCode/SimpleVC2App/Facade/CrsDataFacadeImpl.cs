@@ -4,10 +4,10 @@ using Telossoft.SimpleVC.Model;
 
 namespace Telossoft.SimpleVC.WinFormApp.Facade
 {
-    internal class CrsDataFacadeImpl : GrpMbrDataFacade<EnCourseGroup, EnCourse>,
+    internal class CrsDataFacadeImpl : GrpMbrDataFacade<EnCourseGroup, EnSubject>,
         IGrpMbrDataFacade
     {
-        protected class MbrBisFacade : MbrDataFacade<EnCourseGroup, EnCourse>,
+        protected class MbrBisFacade : MbrDataFacade<EnCourseGroup, EnSubject>,
             IEtyDataFacade
         {
             public MbrBisFacade(IDataRule dataRule)
@@ -21,7 +21,7 @@ namespace Telossoft.SimpleVC.WinFormApp.Facade
             }
         }
 
-        protected class GrpBisFacade : GrpDataFacade<EnCourseGroup, EnCourse>,
+        protected class GrpBisFacade : GrpDataFacade<EnCourseGroup, EnSubject>,
             IEtyDataFacade
         {
             public GrpBisFacade(IDataRule dataRule)
@@ -61,11 +61,11 @@ namespace Telossoft.SimpleVC.WinFormApp.Facade
         public override IList<VcEffect> EffectOfDelete(BaseEntity Ety)
         {
             //课程删除后对应的课务安排会被删除
-            if (!(Ety is EnCourse))
+            if (!(Ety is EnSubject))
                 return null;
 
             IList<VcEffect> Result = new List<VcEffect>();
-            EnCourse crs = Ety as EnCourse;
+            EnSubject crs = Ety as EnSubject;
             foreach(EnClsLesson clsLsn in VC2WinFmApp.DataRule.Lsn.eachClsLesson())
                 if (clsLsn.Lesson.Course.Id == crs.Id)
                 {

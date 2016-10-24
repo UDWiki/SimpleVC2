@@ -30,7 +30,7 @@ namespace Telossoft.SimpleVC.Dac
             {
                 this.OleDB = OleDB;
 
-                IsCourse = typeof(T) == typeof(EnCourse);
+                IsCourse = typeof(T) == typeof(EnSubject);
                 Kind = typeof(T).Name;
 
                 foreach (OleDbDataReader reader in OleDB.EachRows(
@@ -41,7 +41,7 @@ namespace Telossoft.SimpleVC.Dac
                     ety.Id = Convert.ToInt64(reader[0]);
                     ety.Name = reader[1].ToString();
                     if (IsCourse)
-                        (ety as EnCourse).Color = Color.FromArgb(ExConvert.TryToInt32(reader[2], 0));
+                        (ety as EnSubject).Color = Color.FromArgb(ExConvert.TryToInt32(reader[2], 0));
 
                     Entities.Add(ety.Id, ety);
                 }
@@ -109,7 +109,7 @@ namespace Telossoft.SimpleVC.Dac
                         "insert into TAtomAndGrp (FKind, FName, FColor) values ("
                          + "'" + Kind + "', "
                          + "@FName, "
-                         + (IsCourse ? (t as EnCourse).Color.ToArgb().ToString() : "0")
+                         + (IsCourse ? (t as EnSubject).Color.ToArgb().ToString() : "0")
                          + ")",
 
                          new KeyValue<String, Object>("@FName", t.Name)
@@ -122,7 +122,7 @@ namespace Telossoft.SimpleVC.Dac
                     "update TAtomAndGrp set "
 
                      + " FName = @FName, "
-                     + " FColor = " + (IsCourse ? (t as EnCourse).Color.ToArgb().ToString() : "0")
+                     + " FColor = " + (IsCourse ? (t as EnSubject).Color.ToArgb().ToString() : "0")
 
                      + " where FKind = '" + Kind + "' "
                      + " and Id = " + t.Id,

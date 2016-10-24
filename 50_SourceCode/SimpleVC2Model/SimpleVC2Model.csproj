@@ -50,36 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BizEntity\EnFailAct.cs" />
-    <Compile Include="BizEntity\VcActEtyRelation.cs" />
-    <Compile Include="DataRule\IGrpMbrDataRule.cs" />
-    <Compile Include="DataRule\ILsnDataRule.cs" />
-    <Compile Include="DataRule\IRuleDataRule.cs" />
-    <Compile Include="DataAccess\IEntityDac.cs" />
-    <Compile Include="DataAccess\IGrpMbrDac.cs" />
-    <Compile Include="DataAccess\ILsnDac.cs" />
-    <Compile Include="DataAccess\IRuleDac.cs" />
-    <Compile Include="IDataRule.cs" />
-    <Compile Include="CommLogic.cs" />
-    <Compile Include="Component.cs" />
-    <Compile Include="IDataAccess.cs" />
+    <Compile Include="DtFailAct.cs" />
+    <Compile Include="VcActEtyRelation.cs" />
+    <Compile Include="VcTimeLogic.cs" />
+    <Compile Include="DtMatrix.cs" />
     <Compile Include="IEngine.cs" />
-    <Compile Include="IMbrSelect.cs" />
-    <Compile Include="OrmEntity\BaseEntity.cs" />
-    <Compile Include="OrmEntity\EnClsLesson.cs" />
-    <Compile Include="OrmEntity\EnCourse.cs" />
-    <Compile Include="OrmEntity\EnCourseGroup.cs" />
+    <Compile Include="OrmEntity\IBaseEntity.cs" />
+    <Compile Include="OrmEntity\EnSubject.cs" />
+    <Compile Include="OrmEntity\EnEntityGroup.cs" />
     <Compile Include="OrmEntity\EnLesson.cs" />
-    <Compile Include="OrmEntity\EnLsnAct.cs" />
+    <Compile Include="DtLsnAct.cs" />
     <Compile Include="OrmEntity\EnSolution.cs" />
     <Compile Include="OrmEntity\EnSquad.cs" />
-    <Compile Include="OrmEntity\EnSquadGroup.cs" />
     <Compile Include="OrmEntity\EnTeacher.cs" />
-    <Compile Include="OrmEntity\EnTeacherGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VcTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BizEntity\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

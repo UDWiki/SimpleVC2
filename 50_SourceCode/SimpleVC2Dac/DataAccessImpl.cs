@@ -20,7 +20,7 @@ namespace Telossoft.SimpleVC.Dac
             OleDB = new DbAccessImpl(connProvider);
             Config = new ConfigProviderImpl_Orm(connProvider, "TConfig").GetConfig("SimpleVC");
 
-            Crs = new GrpMbrDacImplV2<EnCourseGroup, EnCourse>(this);
+            Crs = new GrpMbrDacImplV2<EnCourseGroup, EnSubject>(this);
             Tch = new GrpMbrDacImplV2<EnTeacherGroup, EnTeacher>(this);
             Sqd = new GrpMbrDacImplV2<EnSquadGroup, EnSquad>(this);
 
@@ -35,7 +35,7 @@ namespace Telossoft.SimpleVC.Dac
         internal EnSolution Solution { get; private set; }
 
 
-        internal GrpMbrDacImplV2<EnCourseGroup, EnCourse> Crs;
+        internal GrpMbrDacImplV2<EnCourseGroup, EnSubject> Crs;
         internal GrpMbrDacImplV2<EnTeacherGroup, EnTeacher> Tch;
         internal GrpMbrDacImplV2<EnSquadGroup, EnSquad> Sqd;
 
@@ -93,7 +93,7 @@ namespace Telossoft.SimpleVC.Dac
             }
         }
 
-        IGrpMbrDac<EnCourseGroup, EnCourse> IDataAccess.Crs
+        IGrpMbrDac<EnCourseGroup, EnSubject> IDataAccess.Crs
         {
             get { return this.Crs; }
         }

@@ -42,7 +42,7 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
             return ThisModule.Dac.Crs.GrpDAC.NameExist(grp, Name);
         }
 
-        public IList<EnCourse> MbrList
+        public IList<EnSubject> MbrList
         {
             get
             {
@@ -50,25 +50,25 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
             }
         }
 
-        public EnCourse GetMbr(long Id)
+        public EnSubject GetMbr(long Id)
         {
             return ThisModule.Dac.Crs.MbrDAC.Get(Id);
         }
 
-        public EnCourse SaveNewMbr(EnCourse Value)
+        public EnSubject SaveNewMbr(EnSubject Value)
         {
             return ThisModule.Dac.Crs.MbrDAC.SaveNew(Value);
         }
 
-        public EnCourse SaveExistMbr(EnCourse Value)
+        public EnSubject SaveExistMbr(EnSubject Value)
         {
-            EnCourse Result = ThisModule.Dac.Crs.MbrDAC.SaveExist(Value);
+            EnSubject Result = ThisModule.Dac.Crs.MbrDAC.SaveExist(Value);
             ThisModule.SendDataChanged();
 
             return Result;
         }
 
-        public bool MbrNameExist(EnCourse mbr, string Name)
+        public bool MbrNameExist(EnSubject mbr, string Name)
         {
             return ThisModule.Dac.Crs.MbrDAC.NameExist(mbr, Name);
         }
@@ -81,7 +81,7 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
             ThisModule.SendDataChanged();
         }
 
-        public void DeleteMbr(EnCourse mbr)
+        public void DeleteMbr(EnSubject mbr)
         {
             //课程删除后对应的课务安排会被删除
             ThisModule.Lsn.CourseIsDelete(mbr);
@@ -92,24 +92,24 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
             ThisModule.SendDataChanged();
         }
 
-        public IList<EnCourse> GetMembes(EnCourseGroup grp)
+        public IList<EnSubject> GetMembes(EnCourseGroup grp)
         {
             return ThisModule.Dac.Crs.GetMembes(grp);
         }
 
-        public IList<EnCourseGroup> GetGroups(EnCourse mbr)
+        public IList<EnCourseGroup> GetGroups(EnSubject mbr)
         {
             return ThisModule.Dac.Crs.GetGroups(mbr);
         }
 
-        public void AddMember(EnCourseGroup grp, EnCourse mbr)
+        public void AddMember(EnCourseGroup grp, EnSubject mbr)
         {
             ThisModule.Dac.Crs.CreateRelation(grp, mbr);
 
             ThisModule.SendDataChanged();
         }
 
-        public void RemoveMember(EnCourseGroup grp, EnCourse mbr)
+        public void RemoveMember(EnCourseGroup grp, EnSubject mbr)
         {
             ThisModule.Dac.Crs.ReleaseRelation(grp, mbr);
 

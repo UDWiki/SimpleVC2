@@ -87,7 +87,7 @@ namespace Telossoft.SimpleVC.WinFormApp
             get { return sharedTime; }
             set
             {
-                if (value != sharedTime && value >= 0 && value <= CommLogic.cMaxSharedTime)
+                if (value != sharedTime && value >= 0 && value <= VcTimeLogic.cMaxSharedTime)
                 {
                     sharedTime = value;
                     FcLsn.LsnEdit.Modify = true;
@@ -126,7 +126,7 @@ namespace Telossoft.SimpleVC.WinFormApp
 
         internal LsnEditInterface LsnEdit;
 
-        public EnCourse course;
+        public EnSubject course;
 
         [GridBindColumn(Title = "¿Î³Ì")]
         public String Course
@@ -158,7 +158,7 @@ namespace Telossoft.SimpleVC.WinFormApp
             get { return sharedTime; }
             set
             {
-                if (value != sharedTime && value >= 0 && value <= CommLogic.cMaxSharedTime)
+                if (value != sharedTime && value >= 0 && value <= VcTimeLogic.cMaxSharedTime)
                 {
                     foreach (FcClsLesson ClsLsn in FcClsLsns)
                         if (ClsLsn.SharedTime == SharedTime)

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Telossoft.SimpleVC.Export
 {
     /// <summary>
-    ///排课方案, 通常是一个学期的
+    ///课表方案, 通常是一个学期的
     /// </summary>
     public class VCExportMatrix
     {

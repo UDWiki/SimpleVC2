@@ -142,7 +142,7 @@ namespace Telossoft.SimpleVC.WinFormApp.VCControl
                         BorderDirect bd  = new BorderDirect();
                         bd.Border = this.GetNewBorderCell();
                         bd.Border.Text = j == 1 ?
-                            CommLogic.BetideNodeToString((eBetideNode)i) + " " + (j)
+                            VcTimeLogic.BetideNodeToString((eBetideNode)i) + " " + (j)
                             : j.ToString();
                         bd.Clm = 0;
                         bd.Row = RowCount;

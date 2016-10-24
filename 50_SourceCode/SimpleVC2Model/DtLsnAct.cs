@@ -60,5 +60,10 @@ namespace Telossoft.SimpleVC.Model
         {
             get { return ClsLesson.Squad.Name; }
         }
+
+        public EnSolution Clone()
+        {
+            return this.MemberwiseClone() as EnSolution;
+        }
     }
 }

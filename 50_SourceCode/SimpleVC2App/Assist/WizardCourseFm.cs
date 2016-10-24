@@ -25,7 +25,7 @@ namespace Telossoft.SimpleVC.WinFormApp.Assist
                 if (fm.cbIfExistThenIgnore.Checked && VC2WinFmApp.DataRule.Crs.MbrNameExist(null, s))
                     continue;
 
-                EnCourse crs = new EnCourse();
+                EnSubject crs = new EnSubject();
                 crs.Name = s;
                 if (VC2WinFmApp.DataRule.Crs.SaveNewMbr(crs) == null)
                     break;

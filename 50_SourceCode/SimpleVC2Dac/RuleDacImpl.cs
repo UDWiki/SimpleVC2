@@ -76,7 +76,7 @@ namespace Telossoft.SimpleVC.Dac
 
                     var rd = ExConvert.TryToInt32(Reader[0], 0);
                     rt.Rule = rd < (Int32)eRule.crisscross || rd > (Int32)eRule.excellent ? eRule.common : (eRule)rd;
-                    rt.Time = CommLogic.GetTimeFromInt32(Convert.ToInt32(Reader[1]));
+                    rt.Time = VcTimeLogic.GetTimeFromInt32(Convert.ToInt32(Reader[1]));
                     ki.Rules.Add(rt);
                 }
                 if (KindIdents == null)
@@ -125,7 +125,7 @@ namespace Telossoft.SimpleVC.Dac
                     + "'" + Ety.GetType().Name + "'"
                     + ", " + Ety.Id 
                     + ", " + (Int32)rt.Rule
-                    + ", " + CommLogic.TimeToInt32(rt.Time)
+                    + ", " + VcTimeLogic.TimeToInt32(rt.Time)
                     + ")");
         }
 

@@ -142,7 +142,7 @@ namespace Telossoft.SimpleVC.WinFormApp.VCControl
                     {
                         Row = new List<Control>();
                         Button Rh = new HeadButton();
-                        Rh.Text = CommLogic.BetideNodeToString((eBetideNode)i) + " " + (j + 1);
+                        Rh.Text = VcTimeLogic.BetideNodeToString((eBetideNode)i) + " " + (j + 1);
                         Rh.Parent = this.Parent;
                         Row.Add(Rh);
                         for (Int32 k = 0; k < Solution.ActiveWeekArr.Length; k++)

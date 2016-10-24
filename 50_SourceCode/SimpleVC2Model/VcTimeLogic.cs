@@ -14,7 +14,7 @@ namespace Telossoft.SimpleVC.Model
         crisscross = -2, ill = -1, common = 0, fine = 1, excellent = 2
     }
 
-    public static class CommLogic
+    public static class VcTimeLogic
     {
         public const Int32 cNameMaxLen = 32;
         public const Int32 cMaxSharedTime = 30;  //同一课，每周最多上课节数
@@ -162,7 +162,7 @@ namespace Telossoft.SimpleVC.Model
             {
                 return Enum.IsDefined(typeof(DayOfWeek), this.Week)
                     && Enum.IsDefined(typeof(eBetideNode), this.BetideNode)
-                    && (this.Order >= 1 && this.Order <= CommLogic.cMaxTimeOrder);
+                    && (this.Order >= 1 && this.Order <= VcTimeLogic.cMaxTimeOrder);
             }
         }
 
@@ -213,7 +213,7 @@ namespace Telossoft.SimpleVC.Model
                 return "未定义的时间";
             else
                 return ExDateTime.DayOfWeekToChiese(this.Week, "周")
-                    + " " + CommLogic.BetideNodeToString(BetideNode)
+                    + " " + VcTimeLogic.BetideNodeToString(BetideNode)
                     + " 第" + this.Order + "节";
         }
     }

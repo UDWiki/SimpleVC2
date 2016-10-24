@@ -195,7 +195,7 @@ namespace Telossoft.SimpleVC.Dac
                 EnClsLesson ClsLsn = new EnClsLesson();
                 ClsLsn.Id = Convert.ToInt64(reader[0]);
                 ClsLsn.SharedTime = Convert.ToInt32(reader[2]);
-                if (ClsLsn.SharedTime < 0 || ClsLsn.SharedTime > CommLogic.cMaxSharedTime)
+                if (ClsLsn.SharedTime < 0 || ClsLsn.SharedTime > VcTimeLogic.cMaxSharedTime)
                 {
                     ThisModule.ErrorLog.Error("VcClsLessonª÷∏¥¥ÌŒÛ£∫SharedTime‘ΩΩÁ"
                         + "  ClsLsn: " + ClsLsn.SharedTime);
@@ -310,7 +310,7 @@ namespace Telossoft.SimpleVC.Dac
             {
                 EnLsnAct Act = new EnLsnAct();
                 Act.Id = Convert.ToInt64(reader[0]);
-                CommLogic.GetTimeFromInt32(Convert.ToInt32(reader[2])).CopyFieldTo(Act.Time);
+                VcTimeLogic.GetTimeFromInt32(Convert.ToInt32(reader[2])).CopyFieldTo(Act.Time);
                 Act.Locked = Convert.ToBoolean(reader[3]);
                 Int64 ClsLsnId = Convert.ToInt64(reader[1]);
 
@@ -336,7 +336,7 @@ namespace Telossoft.SimpleVC.Dac
                 {
                     ThisModule.OleDB.ExecuteNonQuery("update TLsnAct set"
                         + " FLocked = " + (act.Locked ? "True" : "false")
-                        + ", FTime = " + CommLogic.TimeToInt32(act.Time)
+                        + ", FTime = " + VcTimeLogic.TimeToInt32(act.Time)
                         + " where Id = " + act.Id);
                 }
                 else
@@ -351,7 +351,7 @@ namespace Telossoft.SimpleVC.Dac
                         + "(FClsLesson, FLocked, FTime) values ("
                         + nAct.ClsLesson.Id
                         + ", " + (act.Locked ? "True" : "false")
-                        + ", " + CommLogic.TimeToInt32(nAct.Time)
+                        + ", " + VcTimeLogic.TimeToInt32(nAct.Time)
                         + ")"));
 
                     Acts.Add(nAct);

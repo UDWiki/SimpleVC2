@@ -203,7 +203,7 @@ namespace Telossoft.SimpleVC.Dac
                 EnClsLesson ClsLsn = new EnClsLesson();
                 ClsLsn.Id = Convert.ToInt64(reader[0]);
                 ClsLsn.SharedTime = Convert.ToInt32(reader[2]);
-                if (ClsLsn.SharedTime < 0 || ClsLsn.SharedTime > CommLogic.cMaxSharedTime)
+                if (ClsLsn.SharedTime < 0 || ClsLsn.SharedTime > VcTimeLogic.cMaxSharedTime)
                 {
                     ThisModule.ErrorLog.Error("VcClsLesson恢复错误：SharedTime越界"
                         + "  ClsLsn: " + ClsLsn.SharedTime);

@@ -215,15 +215,15 @@ namespace Telossoft.SimpleVC.BizLogic.EngineV2
 
                 foreach (VcRuleCell rt in DataRule.Rule.GetRules(clsLsn))
                     if (clsLsnRules.TestTime(rt.Time))
-                        clsLsnRules[rt.Time] = CommLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
+                        clsLsnRules[rt.Time] = VcTimeLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
                 foreach (VcRuleCell rt in DataRule.Rule.GetRules(clsLsn.Lesson))
                     if (clsLsnRules.TestTime(rt.Time))
-                        clsLsnRules[rt.Time] = CommLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
+                        clsLsnRules[rt.Time] = VcTimeLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
 
                 foreach (BaseEntity ety in eachClsLsnComponent(clsLsn))
                     foreach (VcRuleCell rt in DataRule.Rule.GetRules(ety))
                         if (clsLsnRules.TestTime(rt.Time))
-                            clsLsnRules[rt.Time] = CommLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
+                            clsLsnRules[rt.Time] = VcTimeLogic.RuleAdd(clsLsnRules[rt.Time], rt.Rule);
             }
         }
 

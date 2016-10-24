@@ -83,7 +83,7 @@ namespace Telossoft.SimpleVC.WinFormApp.BaseData
                     + ">视图";
                 gbGroupEntity.Text = mainDataIsGroup ? "成员列表" : "所属组";
                 MainBF = mainDataIsGroup ? GrpMbrBF.Grp : GrpMbrBF.Mbr;
-                IsCourse = MainBF.NewEty() is EnCourse;
+                IsCourse = MainBF.NewEty() is EnSubject;
                 this.Text = "数据维护: " + MainBF.Kind;
 
                 LoadDataToGrid();
@@ -313,7 +313,7 @@ namespace Telossoft.SimpleVC.WinFormApp.BaseData
         protected void DisplayEty(BaseEntity ety)
         {
             this.tbName.Text = ety == null ? "" : ety.Name;
-            lbColor.ForeColor = ety != null && IsCourse ? (ety as EnCourse).Color : Color.Black;
+            lbColor.ForeColor = ety != null && IsCourse ? (ety as EnSubject).Color : Color.Black;
         }
 
         private void MainGrd_DoubleClick(object sender, EventArgs e)
@@ -327,7 +327,7 @@ namespace Telossoft.SimpleVC.WinFormApp.BaseData
             ety.Name = tbName.Text.Trim();
             tbName.Text = ety.Name;
             if (IsCourse)
-                (ety as EnCourse).Color = lbColor.ForeColor;
+                (ety as EnSubject).Color = lbColor.ForeColor;
         }
 
         private Boolean Save()

@@ -31,7 +31,7 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
                 }
         }
 
-        public void CourseIsDelete(EnCourse course)
+        public void CourseIsDelete(EnSubject course)
         {
             IList<EnLesson> Lsns = new List<EnLesson>();
             foreach (EnLesson Lsn in ThisModule.Dac.Lsn.eachLesson())
@@ -112,11 +112,11 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
         private Boolean TestMaxSharedTime(EnLesson Lsn, IList<EnClsLesson> ClsLsns)
         //保证SharedTime数据正常,过大没意义
         {
-            if (Lsn.SharedTime < 0 || Lsn.SharedTime > CommLogic.cMaxSharedTime)
+            if (Lsn.SharedTime < 0 || Lsn.SharedTime > VcTimeLogic.cMaxSharedTime)
                 return false;
 
             foreach(EnClsLesson clsLsn in ClsLsns)
-                if (clsLsn.SharedTime < 0 || clsLsn.SharedTime > CommLogic.cMaxSharedTime)
+                if (clsLsn.SharedTime < 0 || clsLsn.SharedTime > VcTimeLogic.cMaxSharedTime)
                     return false;
 
             return true;
@@ -124,7 +124,7 @@ namespace Telossoft.SimpleVC.BizLogic.DataRule
 
         public void SaveLsnTree(EnLesson Lsn, IList<EnClsLesson> ClsLsns)
         {
-            Debug.Assert(TestMaxSharedTime(Lsn, ClsLsns), "上课时间数据超出范围(0--" + CommLogic.cMaxSharedTime + ")!");
+            Debug.Assert(TestMaxSharedTime(Lsn, ClsLsns), "上课时间数据超出范围(0--" + VcTimeLogic.cMaxSharedTime + ")!");
 
             Lsn = ThisModule.Dac.Lsn.SaveLesson(Lsn);
             foreach (EnClsLesson ClsLsn in ClsLsns)

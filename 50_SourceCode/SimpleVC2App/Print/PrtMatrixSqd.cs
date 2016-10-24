@@ -42,9 +42,9 @@ namespace Telossoft.SimpleVC.WinFormApp.Print
 
     public class PrtMatterCellSqd : PrtMatterCell
     {
-        private EnCourse course;
+        private EnSubject course;
 
-        public EnCourse Course
+        public EnSubject Course
         {
             get { return course; }
             set { course = value; }
