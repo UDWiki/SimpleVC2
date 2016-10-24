@@ -21,7 +21,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -136,6 +136,7 @@
       <DependentUpon>VC2MainFm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <None Include="app.config" />
     <None Include="Properties\AssemblyInfo.Template" />
     <EmbeddedResource Include="VC2MainFm.resx">
       <DependentUpon>VC2MainFm.cs</DependentUpon>

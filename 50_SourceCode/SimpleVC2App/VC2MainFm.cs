@@ -18,6 +18,7 @@ using Telossoft.SimpleVC.WinFormApp.EntitySelect;
 using Telossoft.SimpleVC.WinFormApp.Facade;
 using Telossoft.SimpleVC.WinFormApp.Print;
 using Telossoft.SimpleVC.WinFormApp.UserInterface;
+using System.IO;
 
 namespace Telossoft.SimpleVC.WinFormApp
 {
@@ -36,7 +37,7 @@ namespace Telossoft.SimpleVC.WinFormApp
 
             String connStr;
             var dbFile = Application.StartupPath + "\\VC.mdb";
-            if (ExIO.FileExist(dbFile))
+            if (new FileInfo(dbFile).Exists)
                 connStr = String.Format(VC2WinFmApp.cConnStr, dbFile);
             else
             {

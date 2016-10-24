@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using SGLibrary.Extend;
-using SGLibrary.Extend.DB;
+using SGLibrary.DB;
 using SGLibrary.Framework.GridBind;
 using SGLibrary.Framework.GridBind.WinForm;
 using Telossoft.SimpleVC.Model;

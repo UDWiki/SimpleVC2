@@ -10,12 +10,12 @@
             所有元素当作String
             </summary>
         </member>
-        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletPlane``1(System.String)">
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTemplatePlane``1(System.String)">
             <summary>
             创建单一类型的数据模板
             </summary>
         </member>
-        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletPlane``1">
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTemplatePlane``1">
             <summary>
             创建单一类型的数据模板
             </summary>
@@ -51,17 +51,17 @@
             导入类型一致的重复的多页数据
             </summary>
         </member>
-        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTemplateHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
             <summary>
             创建多类型的数据模板(每页一个类型)
             </summary>
         </member>
-        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.Collections.Generic.IList{System.Type})">
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTemplateHeterogeneity(System.Collections.Generic.IList{System.Type})">
             <summary>
             创建多类型的数据模板(每页一个类型)
             </summary>
         </member>
-        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTempletHeterogeneity(System.String,System.IO.MemoryStream@,System.Collections.Generic.IList{System.Type})">
+        <member name="M:SGLibrary.ExcelImportExport.ByAspose.ExcelImportExportImpl.CreateTemplateHeterogeneity(System.String,System.IO.MemoryStream@,System.Collections.Generic.IList{System.Type})">
             <summary>
             创建多类型的数据模板(每页一个类型)
             </summary>

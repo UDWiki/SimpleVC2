@@ -4,7 +4,7 @@ using System.Data.OleDb;
 using System.Diagnostics;
 using System.Drawing;
 using SGLibrary.Extend;
-using SGLibrary.Extend.DB;
+using SGLibrary.DB;
 using Telossoft.SimpleVC.Model;
 
 namespace Telossoft.SimpleVC.Dac

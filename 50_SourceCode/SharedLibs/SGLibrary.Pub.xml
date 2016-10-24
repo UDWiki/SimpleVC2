@@ -4,6 +4,59 @@
         <name>SGLibrary.Pub</name>
     </assembly>
     <members>
+        <member name="T:SGLibrary.DB.DataTableInfo">
+            <summary>
+            将DataTable转乘易调试的样式
+            </summary>
+        </member>
+        <member name="T:SGLibrary.DB.DataColumnInfo">
+            <summary>
+            将DataColumn转乘易调试的样式
+            </summary>
+        </member>
+        <member name="P:SGLibrary.DB.DataColumnInfo.ValueCountByEnabled">
+            <summary>
+            值数量
+            </summary>
+        </member>
+        <member name="P:SGLibrary.DB.DataColumnInfo.ValueCountByEmpty">
+            <summary>
+            空值数
+            </summary>
+        </member>
+        <member name="P:SGLibrary.DB.DataColumnInfo.ValueExamples">
+            <summary>
+            属性值示例, 只显示前20个
+            </summary>
+        </member>
+        <member name="P:SGLibrary.DB.DataColumnInfo.ValueSet">
+            <summary>
+            状态列表(不包含空)
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Extend.ExFileIO_TextFile">
+            <summary>
+            不要使用
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExFileIO_TextFile.WriteStrToFile(System.String,System.String)">
+            <summary>
+            以StreamWriter形式写入
+            建议用File.WriteAllText
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExFileIO_TextFile.WriteStrToFile(System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            以StreamWriter形式写入
+            建议用File.WriteAllText
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExFileIO_TextFile.ReadTextFile(System.String)">
+            <summary>
+            以StreamReader用System.Text.Encoding.Default读取
+            建议用File.ReadAllText(fileName)
+            </summary>
+        </member>
         <member name="T:SGLibrary.Excel.AttributeProviderExcelColumn2GridBindColumn">
             <summary>
             使用ExcelColumnAttribute的Title、ReadOnly、Sequence定义GridBindColumnAttribute
@@ -59,7 +112,7 @@
             Excel导入导出接口
             </summary>
         </member>
-        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletPlane``1(System.String)">
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTemplatePlane``1(System.String)">
             <summary>
             创建单一类型的数据模板
             </summary>
@@ -106,12 +159,12 @@
             导入类型一致的重复的多页数据
             </summary>
         </member>
-        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTemplateHeterogeneity(System.String,System.Collections.Generic.IList{System.Type})">
             <summary>
             创建多类型的数据模板(每页一个类型)
             </summary>
         </member>
-        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTempletHeterogeneity(System.Collections.Generic.IList{System.Type})">
+        <member name="M:SGLibrary.Excel.IExcelImportExport.CreateTemplateHeterogeneity(System.Collections.Generic.IList{System.Type})">
             <summary>
             创建多类型的数据模板(每页一个类型)
             </summary>
@@ -151,6 +204,16 @@
             数据
             </summary>
         </member>
+        <member name="T:SGLibrary.DB.IDbDialect">
+            <summary>
+             处理DB之差异
+            </summary>
+        </member>
+        <member name="P:SGLibrary.DB.DbDialect_Access.ParaPrefix">
+            <summary>
+            Access.ParaPrefix 使用:/@都可以
+            </summary>
+        </member>
         <member name="M:SGLibrary.Extend.ExConvertObj.ObjectToHexStr(System.Object)">
             <summary>
             序列化任意对象到一个组合的、可校验的、不含空格等特殊字符的串(仅包含：数字、":"、Type.FullName中字符）
@@ -174,12 +237,18 @@
             System.Reflection.Assembly.GetEntryAssembly().Location 
             </summary>
         </member>
+        <member name="M:SGLibrary.Extend.ExStream.ConvertToMemoryStream(System.IO.Stream,System.Int32)">
+            <summary>
+            从inStream当前位置读，注意转换前可能要设置inStream.Position
+            bufferSize: 1--1G
+            </summary>
+        </member>
         <member name="M:SGLibrary.Extend.ExString.SplitAndFormat(System.String,System.String)">
             <summary>
             分离后串会Trim，不含空串
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ExString.Join(System.String,System.String[])">
+        <member name="M:SGLibrary.Extend.ExString.JoinStrings(System.String,System.String[])">
             <summary>
             组合之，如将Id组合成"1,2,3", 类似String.Join
             </summary>
@@ -189,7 +258,7 @@
             组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ExString.Join``1(System.String,System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.String})">
+        <member name="M:SGLibrary.Extend.ExString.Join``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">
             <summary>
             组合之，如将Id组合成"1,2,3"; source允许null, 类似String.Join
             </summary>
@@ -326,21 +395,66 @@
             会递归找到所有子控件
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlCodeListBox_IntIn.components">
+        <member name="T:SGLibrary.Framework.Criterion.WhereNodeGuidIn">
+            <summary>
+            Guid In查询条件
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Criterion.ISqlWhereProvider.GetSqlWhere(SGLibrary.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
+            <summary>
+            bindToFieldName == null直接使用bind
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Framework.Criterion.IWhereNode.Bind">
+            <summary>
+            绑定的属性名
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeGuidIn.#ctor(System.String,System.Guid[])">
+            <summary>
+            At values
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeGuidIn.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            At values
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Framework.Criterion.WhereNodeGuidIn.Compare">
+            <summary>
+            比较符
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Framework.Criterion.WhereNodeGuidIn.CompareValueString">
+            <summary>
+            逗号分隔的
+            </summary>
+        </member>
+        <member name="F:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlIntInListBox.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlCodeListBox_IntIn.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlIntInListBox.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlCodeListBox_IntIn.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlIntInListBox.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:SGLibrary.Framework.Criterion.WhereCtlLoadItemsEventArgs`1.Parent">
+            <summary>
+            为方便处理级联列表
+            </summary>
+        </member>
+        <member name="T:SGLibrary.Framework.Criterion.WinFormControl.WhereCtlStringIn">
+            <summary>
+            双击弹出选择框的字符In控件
             </summary>
         </member>
         <member name="T:SGLibrary.Framework.Criterion.WhereCtlBase">
@@ -514,7 +628,7 @@
             <param name="dataSourceName">导出时作为默认文件名</param>
         </member>
         <member name="M:SGLibrary.Framework.GridBind.WinForm.IGridViewBind`1.Binding(System.Collections.Generic.IList{`0},System.String,System.String)">
-            <param name="key">保存表格配制会包括此dataSourceKey</param>
+            <param name="dataSourceKey">保存表格配制会包括此dataSourceKey</param>
         </member>
         <member name="M:SGLibrary.Framework.GridBind.WinForm.IGridViewBind`1.Clear">
             <summary>
@@ -699,7 +813,7 @@
             <summary> 
             安装勾子 
             </summary> 
-            <param name="hookProcess">外部调用的键盘处理事件</param> 
+            <param name="clientMethod">外部调用的键盘处理事件</param> 
         </member>
         <member name="T:sharphook.Win32API.WM">
             <summary>
@@ -1853,112 +1967,6 @@
             life: 单位秒
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.SGLinq">
-            <summary>
-            当SGPub限制为.Net 2.0时代用Linq的方法
-            偏执狂！
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.ToDictionary``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            转成字典，null返回null，不可以有重复的Key
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.TryToDictionary``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            尝试转成字典，null则返回null，重复Key则得到最后一个值
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.ToSortedDictionary``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            转成字典，null返回null，不可以有重复的Key
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.TryToSortedDictionary``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            尝试转成字典，null则返回null，重复Key则得到最后一个值
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.ToSortedList``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            转成字典，null返回null，不可以有重复的Key
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.TryToSortedList``2(System.Collections.Generic.IEnumerable{``1},SGLibrary.Extend.Func{``1,``0})">
-            <summary>
-            尝试转成字典，null则返回null，重复Key则得到最后一个值
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Where``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Framework.Criterion.WhereList)">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Where``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Select``2(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,``1})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Select``2(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean},SGLibrary.Extend.Func{``0,``1})">
-            <summary>
-            条件选择, source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.FirstOrDefault``1(System.Collections.Generic.IEnumerable{``0})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.FirstOrDefault``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.First``1(System.Collections.Generic.IEnumerable{``0})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.First``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.FirstOrDefault(System.Collections.ICollection,SGLibrary.Extend.Func{System.Object,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.First(System.Collections.ICollection,SGLibrary.Extend.Func{System.Object,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Any``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Count``1(System.Collections.Generic.IEnumerable{``0},SGLibrary.Extend.Func{``0,System.Boolean})">
-            <summary>
-            记数, source不可为null
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.SGLinq.Count``1(System.Collections.Generic.IEnumerable{``0})">
-            <summary>
-            记数, source不可为null
-            </summary>
-        </member>
         <member name="T:SGLibrary.Extend.AnchorQueue`1">
             <summary>
             一个限制容量的List
@@ -2266,13 +2274,13 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.DbAccessImpl.NewParameter(System.Data.IDbCommand,System.String,System.Object)">
+        <member name="M:SGLibrary.DB.DbAccessImpl.NewParameter(System.Data.IDbCommand,System.String,System.Object)">
             <summary>
                 特别注意：参数顺序要与SQL中的一致！
             应该是我什么地方出错了，有空再研究
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.DB.DbConnProviderImpl_MSAccessOleDB">
+        <member name="T:SGLibrary.DB.DbConnProviderImpl_MSAccessOleDB">
             <summary>
             用于MSAccess，问题多多
             记得加如下语句保证Access的关闭：
@@ -2280,89 +2288,84 @@
             在Web应用中当心并发问题
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbConnProviderImpl_MSAccessOleDB.ConnStr_JetOLEDB4">
+        <member name="M:SGLibrary.DB.IDbConnProvider.GetDbDialect">
             <summary>
-            
+            数据库方言
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.DB.DbCrud">
+        <member name="P:SGLibrary.DB.IDbConnProvider.CommandTimeout">
+            <summary>
+            注意ConnectTimeOut不能决定执行Sql语句的超时, 必须使用CommandTimeout
+            </summary>
+        </member>
+        <member name="F:SGLibrary.DB.DbConnProviderImpl_MSAccessOleDB.ConnStrtringTemplate">
+            <summary>
+            连接串模板  Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Mode=ReadWrite|Share Deny None;Persist Security Info=True
+            </summary>
+        </member>
+        <member name="F:SGLibrary.DB.DbConnProviderImpl_MSSQLServer.ConnStrtringTemplate">
+            <summary>
+            连接串模板  Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};Min Pool Size={4}
+            </summary>
+        </member>
+        <member name="T:SGLibrary.DB.DbCrud">
             <summary>
             DB的增删改查
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbCrud.Unknown">
+        <member name="F:SGLibrary.DB.DbCrud.Unknown">
             <summary>
             未知(留给对方处理)
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbCrud.Create">
+        <member name="F:SGLibrary.DB.DbCrud.Create">
             <summary>
             添加
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbCrud.Delete">
+        <member name="F:SGLibrary.DB.DbCrud.Delete">
             <summary>
             删除
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbCrud.Update">
+        <member name="F:SGLibrary.DB.DbCrud.Update">
             <summary>
             更新
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.DB.DbCrud.Retrieve">
+        <member name="F:SGLibrary.DB.DbCrud.Retrieve">
             <summary>
             查询
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.DB.IDbDialect">
-            <summary>
-             处理DB之差异
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Extend.DB.DbDialectProvider">
-            <summary>
-             处理DB之差异
-            </summary>
-        </member>
-        <member name="P:SGLibrary.Extend.DB.DbDialectProvider.DbDialect_Access.ParaPrefix">
-            <summary>
-            Access.ParaPrefix 使用:/@都可以
-            </summary>
-        </member>
-        <member name="P:SGLibrary.Extend.DB.DbDialectProvider.DbDialect_Oracle.ParaPrefix">
-            <summary>
-            Access.ParaPrefix 使用:/@都可以
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.DB.ExDb.DataTableTranspose(System.Data.DataTable,System.Int32,System.String)">
+        <member name="M:SGLibrary.DB.ExDb.DataTableTranspose(System.Data.DataTable,System.Int32,System.String)">
             <summary>
             DataTable的行列转置
             newClmNameFromOldClmIdx列的值变成列名，列名变成第一列的值，oldClmNameClmName为新的第一列列名
             类似Excel中选择性粘贴，转置
             </summary>
         </member>
-        <member name="P:SGLibrary.Extend.DB.ExDb.TransactSqlMinDateTime">
+        <member name="P:SGLibrary.DB.ExDb.TransactSqlMinDateTime">
             <summary>
             TransactSql时间之最小值, 小于此数据库出错
             </summary>
         </member>
-        <member name="P:SGLibrary.Extend.DB.ExDb.OleDbMinDateTime">
+        <member name="P:SGLibrary.DB.ExDb.OleDbMinDateTime">
             <summary>
             OleDb时间之最小值, 小于此数据库出错
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExGridView.ToStringArray(System.Windows.Forms.DataGridView)">
+        <member name="M:SGLibrary.DB.ExGridView.ToStringArray(System.Windows.Forms.DataGridView)">
             <summary>
             调试用的方法, 隐藏列也输出
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExGridView.positionToId(System.Windows.Forms.DataGridView,System.Int64,System.Int32)">
+        <member name="M:SGLibrary.DB.ExGridView.positionToId(System.Windows.Forms.DataGridView,System.Int64,System.Int32)">
             <summary>
                 通过一个Id定位到表格的具体行
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExGridView.GridFilter(System.Windows.Forms.DataGridView,System.String)">
+        <member name="M:SGLibrary.DB.ExGridView.GridFilter(System.Windows.Forms.DataGridView,System.String)">
             <summary>
                 过滤表格行，所有行都参与过滤，不显示的列不参与过滤，Filter为空显示所有行
             过滤条件是简单包含，不存在统配符
@@ -2385,54 +2388,60 @@
             修改這個方法的內容。
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExSql.GetTopSQLStr(System.Int32)">
+        <member name="M:SGLibrary.DB.ExSql.GetTopSQLStr(System.Int32)">
             <summary>
             获取设置返回记录数的SQL子句
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExSql.GetToDateSql(System.String)">
+        <member name="M:SGLibrary.DB.ExSql.GetToDateSql(System.String)">
             <summary>
             拼SQL用
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.ExSql.getDateTimeToStrSql(System.String)">
+        <member name="M:SGLibrary.DB.ExSql.getDateTimeToStrSql(System.String)">
             <summary>
             SQL中取年/月/日用(在SQL中把日期时间字段转为字符串)
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Add_List``1(System.Collections.Generic.IList{``0})">
+        <member name="M:SGLibrary.DB.IDbHelper.Add_List``1(System.Collections.Generic.IList{``0})">
             <summary>
             自动生成的Id会回写入values
             可能部分成功，会跳过null
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Delete_List``1(System.Collections.Generic.IList{``0})">
+        <member name="M:SGLibrary.DB.IDbHelper.Add_List_TryBulkCopy``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            尝试批量写入, 目前只有SqlServer支持, 不支持则自动以一般方式写入
+            注意无法回写自增Id, 对Guid/String类PK能够自动生成
+            </summary>
+        </member>
+        <member name="M:SGLibrary.DB.IDbHelper.Delete_List``1(System.Collections.Generic.IList{``0})">
             <summary>
             会跳过null
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Delete_Where``1(SGLibrary.Framework.Criterion.WhereList)">
+        <member name="M:SGLibrary.DB.IDbHelper.Delete_Where``1(SGLibrary.Framework.Criterion.WhereList)">
             <summary>
             指定null不删除任何
             当前实现当有外连接时多表联合删除有潜在问题的！！！
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Update``1(``0,System.String[])">
+        <member name="M:SGLibrary.DB.IDbHelper.Update``1(``0,System.String[])">
             <summary>
             只更新指定的属性，未指定则更新所有
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Update_List``1(System.Collections.Generic.IList{``0},System.String[])">
+        <member name="M:SGLibrary.DB.IDbHelper.Update_List``1(System.Collections.Generic.IList{``0},System.String[])">
             <summary>
             可能部分成功，会跳过null
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Get_Where``1(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode})">
+        <member name="M:SGLibrary.DB.IDbHelper.Get_Where``1(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode})">
             <summary>
             无符合条件的返回null，否则返回第一个
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.IDbHelper.Query_Paging``1(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode},System.Int32,System.Int32)">
+        <member name="M:SGLibrary.DB.IDbHelper.Query_Paging``1(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode},System.Int32,System.Int32)">
             <summary>
             分页查询，注意pageIndex 0起点
             </summary>
@@ -2457,12 +2466,12 @@
             不能支持07版以后的格式
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.DB.StrProperty2DbCheckImpl">
+        <member name="T:SGLibrary.DB.StrProperty2DbCheckImpl">
             <summary>
             实体写到数据库前对字符串做属性的Check
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.DB.StrProperty2DbCheckImpl.GetStrPropertyCheckInfoMap(System.Type,System.String[])">
+        <member name="M:SGLibrary.DB.StrProperty2DbCheckImpl.GetStrPropertyCheckInfoMap(System.Type,System.String[])">
             <summary>
             获得指定属性列表中字符串属性及长度限制的列表，未指定属性则所有
             </summary>
@@ -2674,7 +2683,7 @@
         </member>
         <member name="M:SGLibrary.Extend.ExDateTime.DateTimeToUniformStr(System.DateTime,System.Int32,System.String)">
             <summary>
-                获得长度固定的日期时间字符串,如"070228_031011"
+                获得长度固定的日期时间字符串,如"070228_031011", node: 年月日时分秒毫秒, 1起点
             </summary>
         </member>
         <member name="M:SGLibrary.Extend.ExDateTime.SafeToOADateTime(System.DateTime)">
@@ -2941,23 +2950,23 @@
                显示实际耗时，显示时将挂起。
             </summary>
         </member>
-        <member name="T:SGLibrary.Extend.ExStringCode">
+        <member name="T:SGLibrary.Extend.ExSequence">
             <summary>
-            字符串编码相关
+            排序号相关
             </summary>
         </member>
-        <member name="F:SGLibrary.Extend.ExStringCode.cEnabledCharInfo">
+        <member name="F:SGLibrary.Extend.ExSequence.cEnabledCharInfo">
             <summary>
             有效的字符编码信息
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ExStringCode.GetNextStringCode(System.String,System.String)">
+        <member name="M:SGLibrary.Extend.ExSequence.GetNextStringCode(System.String,System.String)">
             <summary>
             获取合适的下一个字符串Code
             AA --> AB; aZ --> bA; Zz --> AAa;  S = null或为空则return defaultValue
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ExStringCode.ToNextChar(System.Char@)">
+        <member name="M:SGLibrary.Extend.ExSequence.ToNextChar(System.Char@)">
             <summary>
             获取下一个编码，返回是否进位
             </summary>
@@ -3070,7 +3079,7 @@
             截取有效的数字字符串
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ExRandom.GetRandomArr(System.Int32)">
+        <member name="M:SGLibrary.Extend.ExRandom.NextInt32Array(System.Int32)">
             <summary>
             获得一个由0--count -1的数以随机顺序构成的数组
             </summary>
@@ -3083,6 +3092,11 @@
         <member name="M:SGLibrary.Extend.ExRandom.Next(System.Int32,System.Int32)">
             <summary>
             获取一个大于等于minValue，小于maxValue的值
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Extend.ExRandom.GetRandomItems``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+            获取一组随机的不重复的成员, 注意返回的顺序还是source的顺序
             </summary>
         </member>
         <member name="M:SGLibrary.Extend.INormalGenerator.Next(System.Int32,System.Int32)">
@@ -3296,51 +3310,6 @@
             双Key的字典
             </summary>
         </member>
-        <member name="M:SGLibrary.Extend.ISet20`1.Remove(`0)">
-            <summary>
-            如果t不存在，return false
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ISet20`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            存在交集，other不可为空
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ISet20`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            得到交集，other不可为空 
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.ISet20`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            得到并集，other不可为空 
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.BaseSet20`1.Remove(`0)">
-            <summary>
-            如果t不存在，return false
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.BaseSet20`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            存在交集，other不可为空
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.BaseSet20`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            得到交集，other不可为空 
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Extend.BaseSet20`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
-            <summary>
-            得到并集，other不可为空 
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Extend.HashSet20`1">
-            <summary>
-            .net 2.0中无HashSet，这是一个代用类
-            </summary>
-        </member>
         <member name="T:SGLibrary.Extend.KeyText`1">
             <summary>
             推荐使用KeyValuePair, 或使用Tuple类型
@@ -3421,6 +3390,36 @@
             返回null: 不支持预装载
             </summary>
         </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadString(System.String,System.String,System.String,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadInt64(System.String,System.String,System.Int64,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadInt32(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadBoolean(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadDateTime(System.String,System.String,System.DateTime,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.Config.IConfig.LoadGuid(System.String,System.String,System.Guid,System.String)">
+            <summary>
+            不存在对应key则新增
+            </summary>
+        </member>
         <member name="T:SGLibrary.Framework.Config.ConfigImpl_AppConfig">
             <summary>
             处理外部的App.config/Web.config，特别注意不是本程序的
@@ -3453,19 +3452,9 @@
             配置成组数据用,也可作为IConfig用
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.ISqlWhereProvider.GetSqlWhere(SGLibrary.Extend.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
-            <summary>
-            bindToFieldName == null直接使用bind
-            </summary>
-        </member>
         <member name="F:SGLibrary.Framework.Criterion.FieldInfo.IsDefaultEqsDBNull">
             <summary>
             属性值为Default当做DBNull
-            </summary>
-        </member>
-        <member name="P:SGLibrary.Framework.Criterion.IWhereNode.Bind">
-            <summary>
-            绑定的属性名
             </summary>
         </member>
         <member name="M:SGLibrary.Framework.Criterion.IWhereRem.ListWhereRemItems">
@@ -3593,27 +3582,27 @@
             小于
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.CodeCompare_Value.Invalid">
+        <member name="F:SGLibrary.Framework.Criterion.GuidCompare.Invalid">
             <summary>
             无效值
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.CodeCompare_Tree.Invalid">
+        <member name="F:SGLibrary.Framework.Criterion.TreeCodeCompare.Invalid">
             <summary>
             无效值
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.CodeCompare_Tree.Equal">
+        <member name="F:SGLibrary.Framework.Criterion.TreeCodeCompare.Equal">
             <summary>
             等于
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.CodeCompare_Tree.Include">
+        <member name="F:SGLibrary.Framework.Criterion.TreeCodeCompare.Include">
             <summary>
             包含于
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.CodeCompare_Tree.UnInclude">
+        <member name="F:SGLibrary.Framework.Criterion.TreeCodeCompare.UnInclude">
             <summary>
             不包含于
             </summary>
@@ -3751,62 +3740,32 @@
             比较符
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereNodeCode_Guid">
+        <member name="T:SGLibrary.Framework.Criterion.WhereNodeGuid">
             <summary>
             Guid Code查询条件
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeCode_Guid.#ctor(System.String,System.Guid)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeGuid.#ctor(System.String,System.Guid)">
             <summary>
             等于
             </summary>
         </member>
-        <member name="P:SGLibrary.Framework.Criterion.WhereNodeCode_Guid.Compare">
+        <member name="P:SGLibrary.Framework.Criterion.WhereNodeGuid.Compare">
             <summary>
             比较符
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereNodeCode_Int">
-            <summary>
-            整型Code的查询条件
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeCode_Int.#ctor(System.String,System.Int64)">
-            <summary>
-            等于
-            </summary>
-        </member>
-        <member name="P:SGLibrary.Framework.Criterion.WhereNodeCode_Int.Compare">
-            <summary>
-            比较符
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereNodeCode_String">
-            <summary>
-            字符串Code的查询条件
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeCode_String.#ctor(System.String,System.String)">
-            <summary>
-            等于
-            </summary>
-        </member>
-        <member name="P:SGLibrary.Framework.Criterion.WhereNodeCode_String.Compare">
-            <summary>
-            比较符
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereNodeCode_Tree">
+        <member name="T:SGLibrary.Framework.Criterion.WhereNodeTreeCode">
             <summary>
             字符串树结构Code的查询条件
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeCode_Tree.#ctor(System.String,System.String)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeTreeCode.#ctor(System.String,System.String)">
             <summary>
             包含于
             </summary>
         </member>
-        <member name="P:SGLibrary.Framework.Criterion.WhereNodeCode_Tree.Compare">
+        <member name="P:SGLibrary.Framework.Criterion.WhereNodeTreeCode.Compare">
             <summary>
             比较符
             </summary>
@@ -3827,12 +3786,12 @@
             等于
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeDate.BuildDateWhere(SGLibrary.Framework.Criterion.WhereNodeDate,SGLibrary.Extend.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeDate.BuildDateWhere(SGLibrary.Framework.Criterion.WhereNodeDate,SGLibrary.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
             <summary>
             把相对时间转为绝对时间
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereNodeDate.BuildDateWhere_Absolute(SGLibrary.Framework.Criterion.WhereNodeDate,SGLibrary.Extend.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
+        <member name="M:SGLibrary.Framework.Criterion.WhereNodeDate.BuildDateWhere_Absolute(SGLibrary.Framework.Criterion.WhereNodeDate,SGLibrary.DB.IDbDialect,SGLibrary.Framework.Criterion.DlgBindToFieldInfo,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
             <summary>
             绝对时间
             </summary>
@@ -4348,89 +4307,45 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Guid">
+        <member name="T:SGLibrary.Framework.Criterion.WhereCtlGuidComboBox">
             <summary>
             Guid代码查询条件，Guid代码不可为Guid.Empty
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Guid.components">
+        <member name="F:SGLibrary.Framework.Criterion.WhereCtlGuidComboBox.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Guid.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlGuidComboBox.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Guid.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlGuidComboBox.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Int">
-            <summary>
-            数值代码查询条件，数值代码不可为0
-            </summary>
-        </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Int.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Int.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Int.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlCodeCb_String">
-            <summary>
-            字符串代码查询条件，字符串代码不可为空
-            </summary>
-        </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlCodeCb_String.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_String.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_String.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Tree">
+        <member name="T:SGLibrary.Framework.Criterion.WhereCtlTreeCode">
             <summary>
             树结构编码查询条件
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Tree.components">
+        <member name="F:SGLibrary.Framework.Criterion.WhereCtlTreeCode.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Tree.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlTreeCode.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlCodeCb_Tree.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlTreeCode.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
@@ -4502,45 +4417,45 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlIntCb">
+        <member name="T:SGLibrary.Framework.Criterion.WhereCtlIntComboBox">
             <summary>
             下的数值拉查询条件
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlIntCb.components">
+        <member name="F:SGLibrary.Framework.Criterion.WhereCtlIntComboBox.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntCb.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntComboBox.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntCb.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntComboBox.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlIntTb">
+        <member name="T:SGLibrary.Framework.Criterion.WhereCtlIntTextBox">
             <summary>
             数值查询条件
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlIntTb.components">
+        <member name="F:SGLibrary.Framework.Criterion.WhereCtlIntTextBox.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntTb.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntTextBox.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntTb.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlIntTextBox.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
@@ -4568,23 +4483,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:SGLibrary.Framework.Criterion.WhereCtlStringCb">
+        <member name="T:SGLibrary.Framework.Criterion.WhereCtlStringComboBox">
             <summary>
             下拉的字符串查询条件
             </summary>
         </member>
-        <member name="F:SGLibrary.Framework.Criterion.WhereCtlStringCb.components">
+        <member name="F:SGLibrary.Framework.Criterion.WhereCtlStringComboBox.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlStringCb.Dispose(System.Boolean)">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlStringComboBox.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SGLibrary.Framework.Criterion.WhereCtlStringCb.InitializeComponent">
+        <member name="M:SGLibrary.Framework.Criterion.WhereCtlStringComboBox.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.
@@ -4705,6 +4620,11 @@
             All > Info > Warn > Error > Fatal > Off
             </summary>
         </member>
+        <member name="M:SGLibrary.Framework.Log.ISimpleLog.IsCanRecord">
+            <summary>
+            能够正确记录
+            </summary>
+        </member>
         <member name="T:SGLibrary.Framework.Log.IUser4Log">
             <summary>
             业务日志之用户
@@ -4765,6 +4685,11 @@
             可能部分成功，会跳过null
             </summary>
         </member>
+        <member name="M:SGLibrary.Framework.ORM.IOrmPlanar`1.Add_List_BulkCopy(System.Collections.Generic.IList{`0})">
+            <summary>
+            批量写入, 目前只有SqlServer支持, 注意无法回写自增Id, 对Guid/String类PK能够自动生成
+            </summary>
+        </member>
         <member name="M:SGLibrary.Framework.ORM.IOrmPlanar`1.Delete_List(System.Collections.Generic.IList{`0})">
             <summary>
             会跳过null
@@ -4794,6 +4719,11 @@
         <member name="M:SGLibrary.Framework.ORM.IOrmPlanar`1.Query_Paging(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode},System.Int32,System.Int32)">
             <summary>
             分页查询，注意pageIndex 0起点
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.ORM.IOrmPlanar`1.TryCreateTable(System.Text.StringBuilder)">
+            <summary>
+            sqlExport不为null则只生成SQL语句,并不实际执行
             </summary>
         </member>
         <member name="P:SGLibrary.Framework.ORM.IOrmPlanar`1.Field">
@@ -4891,6 +4821,17 @@
             自动生成的Id会回写入values
             </summary>
         </member>
+        <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.Add_List_BulkCopy(System.Collections.Generic.IList{`0})">
+            <summary>
+            批量写入, 目前只有SqlServer支持, 注意无法回写自增Id, 对Guid/String类PK能够自动生成
+            性能: 1万条数百ms
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.ConvertToDataTable(System.Collections.Generic.IList{`0})">
+            <summary>
+            要求连接数据库
+            </summary>
+        </member>
         <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.BuildWhereStr(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Extend.KeyValue{System.String,System.Object}})">
             <summary>
             要处理数据库类型
@@ -4915,6 +4856,11 @@
         <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.GetQuerySql(System.Collections.Generic.IList{System.String})">
             <summary>
              无select, 只包含properties的属性(为空则全部)
+            </summary>
+        </member>
+        <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.BuildFrom(System.Boolean)">
+            <summary>
+            linkTable: 是否join其他表, 注意Access在删除时不认识join
             </summary>
         </member>
         <member name="M:SGLibrary.Framework.ORM.OrmPlanar`1.Query_Property(SGLibrary.Framework.Criterion.WhereList,System.Collections.Generic.IList{SGLibrary.Framework.Criterion.OrderNode},System.String[])">
@@ -4969,7 +4915,8 @@
         </member>
         <member name="P:SGLibrary.Framework.ORM.OrmPKAttribute.IsCustomerBuild">
             <summary>
-            调用者提供,否则由数据库或DAC层自动生成，包括自增字段、Guid字段(DAC层负责生成)
+            调用者提供,否则自增字段由数据库生成
+            Guid字段未指定则DAC层自动生成
             </summary>
         </member>
         <member name="P:SGLibrary.Framework.ORM.OrmPKAttribute.OracleSequenceName">

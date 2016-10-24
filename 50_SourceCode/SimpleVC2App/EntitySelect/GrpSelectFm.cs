@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
-using SGLibrary.Extend.DB;
+using SGLibrary.DB;
 using Telossoft.SimpleVC.Model;
 
 namespace Telossoft.SimpleVC.WinFormApp.EntitySelect

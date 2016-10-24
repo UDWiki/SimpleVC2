@@ -103,29 +103,29 @@ namespace Telossoft.SimpleVC.WinFormApp.Assist
         public static void LoadViewStyle()
         {
             ViewStyle.Color_Crisscross
-                = Color.FromArgb(VC2WinFmApp.Cfg.ReadInt32(CfgSection, "Color_Crisscross", ViewStyle.cRG_Crisscross.ToArgb()));
+                = Color.FromArgb(VC2WinFmApp.Cfg.TryGetInt32(CfgSection, "Color_Crisscross", ViewStyle.cRG_Crisscross.ToArgb()));
             ViewStyle.Color_Ill
-                = Color.FromArgb(VC2WinFmApp.Cfg.ReadInt32(CfgSection, "Color_Ill", ViewStyle.cRG_Ill.ToArgb()));
+                = Color.FromArgb(VC2WinFmApp.Cfg.TryGetInt32(CfgSection, "Color_Ill", ViewStyle.cRG_Ill.ToArgb()));
             ViewStyle.Color_Fine
-                = Color.FromArgb(VC2WinFmApp.Cfg.ReadInt32(CfgSection, "Color_Fine", ViewStyle.cRG_Fine.ToArgb()));
+                = Color.FromArgb(VC2WinFmApp.Cfg.TryGetInt32(CfgSection, "Color_Fine", ViewStyle.cRG_Fine.ToArgb()));
             ViewStyle.Color_Excellent
-                = Color.FromArgb(VC2WinFmApp.Cfg.ReadInt32(CfgSection, "Color_Excellent", ViewStyle.cRG_Excellent.ToArgb()));
+                = Color.FromArgb(VC2WinFmApp.Cfg.TryGetInt32(CfgSection, "Color_Excellent", ViewStyle.cRG_Excellent.ToArgb()));
 
             ViewStyle.Horizontal
-                = VC2WinFmApp.Cfg.ReadBoolean(CfgSection, "Horizontal", ViewStyle.Horizontal);
+                = VC2WinFmApp.Cfg.TryGetBoolean(CfgSection, "Horizontal", ViewStyle.Horizontal);
             ViewStyle.Description
-                = VC2WinFmApp.Cfg.ReadString(CfgSection, "Description", ViewStyle.Description);
+                = VC2WinFmApp.Cfg.TryGetString(CfgSection, "Description", ViewStyle.Description);
         }
 
         public static void SaveViewStyle()
         {
-            VC2WinFmApp.Cfg.WriteInt32(CfgSection, "Color_Crisscross", ViewStyle.Color_Crisscross.ToArgb());
-            VC2WinFmApp.Cfg.WriteInt32(CfgSection, "Color_Ill", ViewStyle.Color_Ill.ToArgb());
-            VC2WinFmApp.Cfg.WriteInt32(CfgSection, "Color_Fine", ViewStyle.Color_Fine.ToArgb());
-            VC2WinFmApp.Cfg.WriteInt32(CfgSection, "Color_Excellent", ViewStyle.Color_Excellent.ToArgb());
+            VC2WinFmApp.Cfg.SetInt32(CfgSection, "Color_Crisscross", ViewStyle.Color_Crisscross.ToArgb());
+            VC2WinFmApp.Cfg.SetInt32(CfgSection, "Color_Ill", ViewStyle.Color_Ill.ToArgb());
+            VC2WinFmApp.Cfg.SetInt32(CfgSection, "Color_Fine", ViewStyle.Color_Fine.ToArgb());
+            VC2WinFmApp.Cfg.SetInt32(CfgSection, "Color_Excellent", ViewStyle.Color_Excellent.ToArgb());
 
-            VC2WinFmApp.Cfg.WriteBoolean(CfgSection, "Horizontal", ViewStyle.Horizontal);
-            VC2WinFmApp.Cfg.WriteString(CfgSection, "Description", ViewStyle.Description);
+            VC2WinFmApp.Cfg.SetBoolean(CfgSection, "Horizontal", ViewStyle.Horizontal);
+            VC2WinFmApp.Cfg.SetString(CfgSection, "Description", ViewStyle.Description);
         }
     }
 }

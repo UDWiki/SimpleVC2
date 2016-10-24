@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Windows.Forms;
 using SGLibrary.Extend;
-using SGLibrary.Extend.DB;
+using SGLibrary.DB;
 using SGLibrary.Framework.Config;
 using SGLibrary.Framework.Log;
 using Telossoft.SimpleVC.Model;

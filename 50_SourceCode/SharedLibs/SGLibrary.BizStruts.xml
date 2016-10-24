@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SGLibrary.BizStruts</name>
+    </assembly>
+    <members>
+        <member name="T:SGLibrary.BizStruts.AuthorityTreeRoleGroup.AuthorityTreeRoleGroupMng`1">
+            <summary>
+            用来处理权限树的角色群等, 对嵌入类允许继承
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.AuthorityTreeRoleGroup.AuthorityTreeRoleGroupMng`1.LoadRoleGroupAttribute(System.Type,System.Collections.Generic.IList{System.String},System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.IList{System.String}})">
+            <summary>
+            装载RoleGroupAttribute，Id与RoleGroupAttribute的对应关系会加入roleGroupDict，将被递归调用，所以传type
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.AuthorityTreeRoleGroup.AuthorityTreeRoleGroupMng`1.GetRoleGroupAttribute(System.Type)">
+            <summary>
+            获取类的RoleGroupAttribute
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.AuthorityTreeRoleGroup.AuthorityTreeRoleGroupMng`1.GetRoleGroupAttribute(System.Reflection.FieldInfo)">
+            <summary>
+            获取字段的RoleGroupAttribute
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.AuthorityTreeRoleGroup.AuthorityTreeRoleGroupMng`1.HasRoleGroup(System.Int32,System.String)">
+            <summary>
+            测试指定的权限authority是否具有指定的角色群roleGroup
+            未指定可用角色群则认为所有角色群都可以
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.AuthorityTreeRoleGroup.RoleGroupAttribute">
+            <summary>
+            嵌套将继承，全空则所有
+            角色群，使用场景：权限可以分为适用于经销商的、适用于公司员工的、都适用的等
+            通过在权限上指定适用的角色群、在用户组或用户（根据业务决定）上指定所属角色群（多个）
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizDict.IBizDictMng">
+            <summary>
+            用来处理系统中通常不变的一些配置项
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.BizDict.IBizDictMng.ListBizDict_All(System.String)">
+            <summary>
+            列出指定Kind的，按Sequence排序的BizDict
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.BizDict.IBizDictMng.ListBizDict(System.String)">
+            <summary>
+            列出指定Kind的，有效的，按Sequence排序的BizDict
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizDict.EnBizDict">
+            <summary>
+            一个通用的程序用的字典类，保存程序中不常变更的数据
+            </summary>
+        </member>
+        <member name="P:SGLibrary.BizStruts.BizDict.EnBizDict.KindDescription">
+            <summary>
+            描述性，不可做条件
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizLog.IBizLogAppender">
+            <summary>
+            Log输出(业务日志附着器接口)
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizLog.BizLogAppenderImpl_Orm">
+            <summary>
+            会自动创建BizLog表
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizLog.BizLogMngImpl`1">
+            <summary>
+            业务日志管理
+            </summary>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizLog.IBizLogMng">
+            <summary>
+            业务日志管理器接口
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.BizLog.IBizLogMng.SetConfig(System.Boolean,System.Collections.Generic.IList{System.Int32})">
+            <summary>
+            未设置则全部有效
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.BizLog.IBizLogMng.WriteLog(SGLibrary.Framework.Log.IUser4Log,System.Int32,System.Object)">
+            <summary>
+            写简单的成功事件Log
+            </summary>
+        </member>
+        <member name="M:SGLibrary.BizStruts.BizLog.BizLogMngImpl`1.#ctor(SGLibrary.BizStruts.BizLog.IBizLogAppender,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="idPropertyName">业务数据的id属性名</param>
+        </member>
+        <member name="T:SGLibrary.BizStruts.BizLog.EnBizLog">
+            <summary>
+            业务日志实体
+            </summary>
+        </member>
+    </members>
+</doc>
